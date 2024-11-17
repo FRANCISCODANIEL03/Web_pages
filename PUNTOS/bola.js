@@ -5,7 +5,7 @@ class Bola{
         this.radio = 10
         this.dirX = (Math.random() * 2) - 1
         this.dirY = (Math.random() * 2) - 1
-        this.velocidad = 5
+        this.velocidad = 7
     }
     
     dibujar(){
