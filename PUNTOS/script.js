@@ -6,7 +6,7 @@ canvas.height = innerHeight
 
 let balls = []
 
-for(let i = 0; i < 20; i++){
+for(let i = 0; i < 30; i++){
     balls.push(new Bola(canvas.width / 2, canvas.height / 2))
 }
 function animar(){
