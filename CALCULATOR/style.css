@@ -22,3 +22,10 @@ body{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     position: relative;
 }
+
+.theme-switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
