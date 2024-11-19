@@ -5,3 +5,11 @@
     font-family: cursive;
     font-weight: 700;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5d9b5;
+}
