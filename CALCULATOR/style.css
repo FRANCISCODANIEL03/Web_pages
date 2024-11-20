@@ -66,3 +66,7 @@ body{
     background-color: white;
     transition: .4s;
 }
+
+input:checked + .slider{
+    background-color: #2196f3;
+}
