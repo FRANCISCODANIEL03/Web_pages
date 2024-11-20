@@ -115,3 +115,7 @@ button:hover{
 button:active{
     transform: scale(0.98);
 }
+
+body.dark{
+    background-color: #2b2b2b;
+}
