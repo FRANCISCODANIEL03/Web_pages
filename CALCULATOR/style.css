@@ -119,3 +119,7 @@ button:active{
 body.dark{
     background-color: #2b2b2b;
 }
+
+body.dark .calculator{
+    background-color: #333;
+}
