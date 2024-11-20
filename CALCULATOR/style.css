@@ -107,3 +107,7 @@ button{
     cursor: pointer;
     transition: all 0.2s ease;
 }
+
+button:hover{
+    background: linear-gradient(145deg, #fae1cc, #f2c398);
+}
