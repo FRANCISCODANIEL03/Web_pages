@@ -111,3 +111,7 @@ button{
 button:hover{
     background: linear-gradient(145deg, #fae1cc, #f2c398);
 }
+
+button:active{
+    transform: scale(0.98);
+}
