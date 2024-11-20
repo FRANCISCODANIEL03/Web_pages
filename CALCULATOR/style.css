@@ -96,3 +96,14 @@ input:checked + .slider:before{
     gap: 10px;
     margin-top: 20px;
 }
+
+button{
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f2c398, #fae1cc);
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
