@@ -144,3 +144,7 @@ body.dark .theme-text{
     font-size: 2rem;
     text-align: right;
 }
+
+#expresion.long, #result.long{
+    font-size: 1.2rem;
+}
