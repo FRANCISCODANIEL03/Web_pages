@@ -8,4 +8,10 @@ window.onload=()=>{
     let result = ""
     let lastInput = ""
 
+    themeToggle.addEventListener('change', ()=>{
+        body.classList.toggle('dark')
+        const themeText = document.querySelector('.theme-text')
+        themeText.textContent = themeToggle.checked ? "Switch to Ligth" : "Switch to Dark"
+    })
+
 }
