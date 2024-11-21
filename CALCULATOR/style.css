@@ -132,3 +132,10 @@ body.dark button{
 body.dark .theme-text{
     color: #fff;
 }
+
+.display span{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
