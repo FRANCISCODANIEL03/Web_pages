@@ -1,0 +1,10 @@
+.digital-clock{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+    width: 70%;
+}
