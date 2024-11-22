@@ -19,3 +19,7 @@
     font-weight: bold;
     font-family: cursive;
 }
+
+.week .active{
+    color: white;
+}
