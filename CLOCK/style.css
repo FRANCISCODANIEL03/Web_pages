@@ -28,3 +28,9 @@
     font-family: cursive;
 }
 
+.hour, .min, .dot{
+    display: inline-block;
+    font-size: 13rem;
+}
+
+
