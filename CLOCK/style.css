@@ -33,4 +33,6 @@
     font-size: 13rem;
 }
 
-
+.invisible{
+    visibility: hidden;
+}
