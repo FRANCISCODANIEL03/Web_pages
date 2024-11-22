@@ -8,3 +8,14 @@
     border: 0.5rem solid #2d2d2d;
     width: 70%;
 }
+
+.week{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: cursive;
+}
