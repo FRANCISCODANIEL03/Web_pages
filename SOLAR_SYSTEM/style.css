@@ -7,3 +7,10 @@ body{
     overflow: hidden;
     background-color: black;
 }
+
+.container{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
