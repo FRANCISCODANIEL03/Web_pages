@@ -41,3 +41,11 @@ body{
     height: 30em;
     animation: orbit 36.5s linear infinite;
 }
+
+.moon{
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
