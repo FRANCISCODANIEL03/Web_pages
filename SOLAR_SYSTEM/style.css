@@ -14,3 +14,14 @@ body{
     height: 40em;
     position: relative;
 }
+
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 0 3em white;
+}
