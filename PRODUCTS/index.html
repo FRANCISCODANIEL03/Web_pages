@@ -26,5 +26,14 @@
 
             <button id="submit" type="submit">Create</button>
         </div>
+        <div class="outputs">
+            <div class="search">
+                <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="search">
+                <div class="btnS">
+                    <button id="searchBtnT" onclick="searchData(this.id)" type="submit">Search by Title</button>
+                    <button id="searchBtnC" onclick="searchData(this.id)" type="submit">Search by Category</button>
+                </div>
+            </div>
+    </div>
 </body>
 </html>
