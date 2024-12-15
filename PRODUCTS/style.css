@@ -32,3 +32,13 @@ input{
     background: #111;
     color: white;
 }
+
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+    transition: background 0.2s ease-in-out;
+}
+
+.price input{
+    width: 20%;
+}
