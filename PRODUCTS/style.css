@@ -69,3 +69,8 @@ button:hover{
     letter-spacing: 1.5px;
     transition: all 0.5s ease;
 }
+
+.btnS{
+    display: flex;
+    justify-content: space-between;
+}
