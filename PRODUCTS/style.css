@@ -78,3 +78,8 @@ button:hover{
 .btnS button{
     width: 45%;
 }
+
+table th{
+    text-transform: uppercase;
+    padding: 5px;
+}
