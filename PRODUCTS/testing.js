@@ -11,3 +11,14 @@ let discount = document.getElementById('discount')
 
 let mode = 'Create'
 let globalI
+
+function calculateTotal(){
+    if(price.value != '' || taxes.value != '' || ads.value != '' || discount.value != ''){
+        let result = (+price.value + +taxes.value + +ads.value)- +discount.value
+        total.innerHTML = result
+        total.style.background = '#040'
+    } else{
+        total.innerHTML = 0
+        total.style.background = '#a00d02'
+    }
+}
