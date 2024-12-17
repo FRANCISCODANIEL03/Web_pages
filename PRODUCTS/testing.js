@@ -22,3 +22,10 @@ function calculateTotal(){
         total.style.background = '#a00d02'
     }
 }
+
+let data
+if(localStorage.crud != null){
+    data = JSON.parse(localStorage.crud)
+} else{
+    data = []
+}
