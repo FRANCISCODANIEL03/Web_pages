@@ -29,3 +29,15 @@ if(localStorage.crud != null){
 } else{
     data = []
 }
+
+button.addEventListener('click', () =>{
+    let obeject = {
+        title: title.value.toLowerCase(),
+        price: price.value,
+        taxes: taxes.value,
+        ads: ads.value,
+        discount: discount.value,
+        total: total.innerHTML,
+        count: count.value,
+        category: category.value.toLowerCase()
+    }
