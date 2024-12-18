@@ -41,3 +41,23 @@ button.addEventListener('click', () =>{
         count: count.value,
         category: category.value.toLowerCase()
     }
+
+    if(mode === 'create'){
+        if(obeject.count > 0){
+            for(let i=0; i < obeject.count; i++){
+                data.push(obeject)
+            }
+        } else{
+            data.push(obeject)
+        }
+    } else{
+        data[globalI] = obeject
+        button.innerHTML = 'Create'
+        mode = 'create'
+        count.style.display = 'block'
+    }
+
+    localStorage.setItem('crud', JSON.stringify(data))
+    clearData()
+    showData()
+})
