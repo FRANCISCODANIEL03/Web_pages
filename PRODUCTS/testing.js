@@ -72,3 +72,8 @@ function clearData(){
     count.value = ''
     category.value = ''
 }
+
+function showData(){
+    calculateTotal()
+    let table = ''
+}
