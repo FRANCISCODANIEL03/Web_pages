@@ -61,3 +61,14 @@ button.addEventListener('click', () =>{
     clearData()
     showData()
 })
+
+function clearData(){
+    title.value = ''
+    price.value = ''
+    taxes.value = ''
+    ads.value = ''
+    discount.value = ''
+    total.innerHTML = ''
+    count.value = ''
+    category.value = ''
+}
