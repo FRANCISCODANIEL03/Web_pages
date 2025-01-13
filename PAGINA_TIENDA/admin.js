@@ -36,5 +36,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     let cliente = [];
     let data = []
 
+    prodButton.addEventListener("click", () =>{
+        hiddenB()
+        nameL.textContent = "PRODUCTOS"
+        searchButton.style.display = "block"
+        insButton.style.display = "block"
+        upButton.style.display = "block"
+        delButton.style.display = "block"
+
+        cont = 1;
+    })
+
 
 });
