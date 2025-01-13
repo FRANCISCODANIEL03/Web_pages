@@ -14,6 +14,75 @@
         </div>
     </header>
     
+    <main>
+        <div class="content">
+            <div class="options">
+                <h2 id="name"></h2>
+                <h3>Operaciones Disponibles</h3>
+                <button id="search" style="display: none;">Buscar</button>
+                <button id="insert" style="display: none;">Insertar</button>
+                <button id="update" style="display: none;">Actualizar</button>
+                <button id="delete" style="display: none;">Eliminar</button>      
+            </div>
 
+            <div class="campos">
+                <h2 id="opera" style="display: none;"></h2>
+                <h3>CAMPOS</h3>
+                <div class="input-box_2" id="did" style="display: none;">
+                    <input type="number" id="id" placeholder="">
+                    <label>ID</label>
+                </div>
+                <div class="input-box_2" id="dnombre" style="display: none;">
+                    <input type="text" id="nombre" placeholder="">
+                    <label>NOMBRE</label>
+                </div>
+                <div class="input-box_2" id="dape1" style="display: none;">
+                    <input type="text" id="ape1" placeholder="">
+                    <label>APELLIDO 1</label>
+                </div>
+                <div class="input-box_2" id="dape2" style="display: none;">
+                    <input type="text" id="ape2" placeholder="">
+                    <label>APELLIDO 2</label>
+                </div>
+                <div class="input-box_2" id="dfecha" style="display: none;">
+                    <input type="text" id="fecha" placeholder="">
+                    <label>FECHA DE NACIMIENTO</label>
+                </div>
+                <div class="input-box_2" id="dnombret" style="display: none;">
+                    <input type="text" id="nombret" placeholder="">
+                    <label>NOMBRE DE LA TIENDA</label>
+                </div>
+                <div class="input-box_2" id="dpuntos" style="display: none;">
+                    <input type="text" id="puntos" placeholder="">
+                    <label>PUNTOS DE COMPRA</label>
+                </div>
+                <div class="input-box_2" id="dnombrep" style="display: none;">
+                    <input type="text" id="nombrep" placeholder="">
+                    <label>NOMBRE PRODUCTO</label>
+                </div>
+                <div class="input-box_2" id="ddescrip" style="display: none;">
+                    <input type="text" id="descrip" placeholder="">
+                    <label>DESCRIPCION</label>
+                </div>
+                <div class="input-box_2" id="dprecio" style="display: none;">
+                    <input type="number" id="precio" placeholder="">
+                    <label>PRECIO</label>
+                </div>
+                <div class="input-box_2" id="dstock" style="display: none;">
+                    <input type="number" id="stock" placeholder="">
+                    <label>STOCK</label>
+                </div>
+                <button id="btn_op" style="display: none;">Ejecutar Operacion</button>
+            </div>
+            <div class="options" style="display: none;" id="result">
+                <h2>Resultado</h2>
+                <ul id="result_list">
+
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+   
 </body>
 </html>
