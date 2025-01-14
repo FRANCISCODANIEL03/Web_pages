@@ -226,7 +226,28 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
-       
+        if(op == "search" && rec == "product"){
+            try{
+             // Obtener productos de la API
+            const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/productos/${ID}`);
+            if (!response.ok) throw new Error("Error al obtener los datos de la API");
+            producto = await response.json();
+            }catch (error) {
+                Swal.fire({
+                    title:"Producto no registrado en la Base de Datos",
+                    icon:"error"
+                })
+                return;
+            }
+            const li = document.createElement("li");
+            li.innerHTML = `Id: ${producto.id_producto}<br> 
+                            -> Nombre: ${producto.nombre_producto}<br>  
+                            -> Descripcion: ${producto.descripcion}<br>
+                            -> Precio: ${producto.precio}<br>
+                            -> Stock: ${producto.stock}<br>`;
+            Result.appendChild(li)
+            divRes.style.display = "block"
+        }
     })
 
 });
