@@ -248,6 +248,26 @@ document.addEventListener("DOMContentLoaded", async () => {
             Result.appendChild(li)
             divRes.style.display = "block"
         }
+        else if(op == "search" && rec == "store"){
+            try{
+                // Obtener productos de la API
+               const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/tiendas/${ID}`);
+               if (!response.ok) throw new Error("Error al obtener los datos de la API");
+               tienda = await response.json();
+               }catch (error) {
+                Swal.fire({
+                    title:"Tienda no registrada en la Base de Datos",
+                    icon:"error"
+                })
+                return;
+               }
+            const li = document.createElement("li");
+           li.innerHTML = `Id: ${tienda.id_tienda}<br> 
+                           -> Nombre de la tienda: ${tienda.nombre_tienda}<br>`;
+           Result.appendChild(li)
+           divRes.style.display = "block"
+        }
+        
     })
 
 });
