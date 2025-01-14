@@ -47,5 +47,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         cont = 1;
     })
 
+    storeButton.addEventListener("click", () =>{
+        hiddenB()
+        nameL.textContent = "TIENDAS"
+        searchButton.style.display = "block"
+        insButton.style.display = "block"
+        upButton.style.display = "block"
+        delButton.style.display = "block"
+        cont = 2;
+    })
+
 
 });
