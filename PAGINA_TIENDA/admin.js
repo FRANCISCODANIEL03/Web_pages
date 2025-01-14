@@ -129,5 +129,35 @@ document.addEventListener("DOMContentLoaded", async () => {
          opButton.style.display = "block"
     })
 
+    upButton.addEventListener("click", () =>{
+        hiddenI()
+        oper.textContent = "ACTUALIZAR"
+        oper.style.display = "block"
+        op = "update"
+        divId.style.display = "block"
+        switch(cont){
+            case 1:
+                divNomP.style.display = "block"
+                divDes.style.display = "block"
+                divPrecio.style.display = "block"
+                divStock.style.display = "block"
+                rec = "product"
+            break;
+            case 2:
+                divNomT.style.display = "block"
+                rec = "store"
+            break;
+            case 4:
+                divNom.style.display = "block"
+                divApe1.style.display = "block"
+                divApe2.style.display = "block"
+                divFn.style.display = "block"
+                divPunt.style.display = "block"
+                rec = "client"
+            break;
+        }
+        opButton.style.display = "block"
+    })
+
 
 });
