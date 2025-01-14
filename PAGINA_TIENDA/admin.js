@@ -77,4 +77,28 @@ document.addEventListener("DOMContentLoaded", async () => {
         cont = 4;
     })
 
+    searchButton.addEventListener("click", () =>{
+        hiddenI()
+        oper.textContent = "BUSCAR"
+        oper.style.display = "block"
+        op = "search"
+        divId.style.display = "block"
+        switch(cont){
+            case 1:
+                rec = "product";
+            break;
+            case 2:
+                rec = "store";
+            break;
+            case 3:
+                rec = "buy";
+            break;
+            case 4:
+                rec = "client";
+            break;
+        }
+         opButton.style.display = "block"
+    })
+
+
 });
