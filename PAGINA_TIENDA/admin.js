@@ -57,5 +57,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         cont = 2;
     })
 
+    buyButton.addEventListener("click", () =>{
+        hiddenB()
+        nameL.textContent = "COMPRAS"
+        searchButton.style.display = "block"
+        delButton.style.display = "block"
+
+        cont = 3;
+    })
+
 
 });
