@@ -182,5 +182,51 @@ document.addEventListener("DOMContentLoaded", async () => {
         opButton.style.display = "block"
     })
 
+    opButton.addEventListener("click", async () =>{
+        const Id = document.getElementById("id").value;
+        const Nom = document.getElementById("nombre").value;
+        const Ape1 = document.getElementById("ape1").value;
+        var Ape2 = document.getElementById("ape2").value;
+        var Fn = document.getElementById("fecha").value;
+        const NomT = document.getElementById("nombret").value;
+        var Punt = parseInt(document.getElementById("puntos").value);
+        const NomP = document.getElementById("nombrep").value;
+        const Des = document.getElementById("descrip").value;
+        const Precio = parseFloat(document.getElementById("precio").value);
+        const Stock = parseInt(document.getElementById("stock").value);
+        const ID = parseInt(Id)
+        Result.innerHTML = ""
+
+        if(ID < 1){
+            Swal.fire({
+                title:"Por favor, ingresa un id valido",
+                icon:"warning"
+            })
+            return;
+        }
+        if(Punt < 0){
+            Swal.fire({
+                title:"Por favor, ingresa puntos validos",
+                icon:"warning"
+            })
+            return;
+        }
+        if(Precio < 1){
+            Swal.fire({
+                title:"Por favor, ingresa un precio valido",
+                icon:"warning"
+            })
+            return;
+        }
+        if(Stock < 0){
+            Swal.fire({
+                title:"Por favor, ingresa un stock valido",
+                icon:"warning"
+            })
+            return;
+        }
+
+       
+    })
 
 });
