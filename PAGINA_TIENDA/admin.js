@@ -66,5 +66,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         cont = 3;
     })
 
+    clientButton.addEventListener("click", () =>{
+        hiddenB()
+        nameL.textContent = "CLIENTES"
+        searchButton.style.display = "block"
+        insButton.style.display = "block"
+        upButton.style.display = "block"
+        delButton.style.display = "block"
+
+        cont = 4;
+    })
 
 });
