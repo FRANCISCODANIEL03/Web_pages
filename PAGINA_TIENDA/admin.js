@@ -159,5 +159,28 @@ document.addEventListener("DOMContentLoaded", async () => {
         opButton.style.display = "block"
     })
 
+    delButton.addEventListener("click", () =>{
+        hiddenI()
+        oper.textContent = "ELIMINAR"
+        oper.style.display = "block"
+        op = "delete"
+        divId.style.display = "block"
+        switch(cont){
+            case 1:
+                rec = "product";
+            break;
+            case 2:
+                rec = "store";
+            break;
+            case 3:
+                rec = "buy";
+            break;
+            case 4:
+                rec = "client";
+            break;
+        }
+        opButton.style.display = "block"
+    })
+
 
 });
