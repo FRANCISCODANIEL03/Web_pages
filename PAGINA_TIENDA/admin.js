@@ -416,6 +416,55 @@ document.addEventListener("DOMContentLoaded", async () => {
                 icon:"success"
             })
         }
+        else if(op == "insert" && rec == "client"){
+            if (!Ape2){
+                Ape2 = null
+            }
+            if(!Fn){
+                Fn = null
+            }
+            if(!Punt){
+                Punt = 0
+            }
+            
+            const nuevoCliente = {
+                nombre_cliente: Nom,
+                apellido1: Ape1,
+                apellido2: Ape2,
+                fecha_nacimiento: Fn,
+                puntos_compra: Punt
+            };
+            console.log(nuevoCliente)
+            try {
+                const response = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/clientes", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(nuevoCliente)
+                });
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    Swal.fire({
+                        title: "Cliente ya registrado en la Base de Datos",
+                        icon: "error",
+                    });
+                    return;
+                }
+                data = await response.json()
+                } catch (error) {
+                    console.error(error);
+                    Swal.fire({
+                        title:"Hubo un problema al registrar el cliente.",
+                        icon:"error"
+                    })
+                    return;
+                }
+            Swal.fire({
+                title:`Cliente registrado exitosamente con el ID: ${data.id_cliente}`,
+                icon:"success"
+            })        
+        }
     })
 
 });
