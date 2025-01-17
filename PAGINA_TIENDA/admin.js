@@ -382,6 +382,40 @@ document.addEventListener("DOMContentLoaded", async () => {
                 icon:"success"
             })
         }
+        else if(op == "insert" && rec == "store"){
+            const nuevoTienda = {
+                nombre_tienda: NomT
+            };
+            try {
+                const response = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/tiendas", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(nuevoTienda)
+                });
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    Swal.fire({
+                        title: "Tienda ya registrada en la Base de Datos",
+                        icon: "error",
+                    });
+                    return;
+                }
+                data = await response.json()
+            } catch (error) {
+                console.error(error);
+                Swal.fire({
+                    title:"Hubo un problema al registrar la tienda.",
+                    icon:"warning"
+                })
+                return;
+            }
+            Swal.fire({
+                title:`Tienda registrada exitosamente con el ID: ${data.id_tienda}`,
+                icon:"success"
+            })
+        }
     })
 
 });
