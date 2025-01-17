@@ -267,6 +267,56 @@ document.addEventListener("DOMContentLoaded", async () => {
            Result.appendChild(li)
            divRes.style.display = "block"
         }
+        else if(op == "search" && rec == "buy"){
+            try {
+                // Obtener compra de la API
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/compras/${ID}`);
+                if (!response.ok) throw new Error("Error al obtener los datos de la API");
+            
+                compra = await response.json();
+            } catch (error) {
+                Swal.fire({
+                    title:"Compra no registrada en la Base de Datos",
+                    icon:"error"
+                })
+                return;
+            }
+            
+            // Crear elementos para mostrar la información
+            const liCompra = document.createElement("li");
+            liCompra.innerHTML = `
+                <strong>Id de la compra:</strong> ${compra.id_compra}<br>
+                <strong>Fecha de compra:</strong> ${new Date(compra.fecha_compra).toLocaleDateString()}<br>
+                <strong>Tienda:</strong> ${compra.tienda_.nombre_tienda}<br>
+            `;
+            Result.appendChild(liCompra);
+            
+            // Información del cliente
+            const liCliente = document.createElement("li");
+            liCliente.innerHTML = `
+                <strong>Cliente:</strong> ${compra.cliente_.nombre_cliente} ${compra.cliente_.apellido1} ${compra.cliente_.apellido2}<br>
+                <strong>Fecha de nacimiento:</strong> ${new Date(compra.cliente_.fecha_nacimiento).toLocaleDateString()}<br>
+                <strong>Puntos acumulados:</strong> ${compra.cliente_.puntos_compra}<br>
+            `;
+            Result.appendChild(liCliente);
+            
+            // Detalles de la compra
+            compra.detalles_.forEach((detalle, index) => {
+                const liDetalle = document.createElement("li");
+                liDetalle.innerHTML = `
+                    <strong>Producto ${index + 1}:</strong><br>
+                    - Nombre del producto: ${detalle.producto.nombre_producto}<br>
+                    - Descripción: ${detalle.producto.descripcion || "Sin descripción"}<br>
+                    - Precio unitario: $${detalle.producto.precio.toFixed(2)}<br>
+                    - Cantidad comprada: ${detalle.cantidad_productos}<br>
+                    - Total: $${detalle.total.toFixed(2)}<br>
+                `;
+                Result.appendChild(liDetalle);
+            });
+        
+            // Mostrar el contenedor de resultados
+            divRes.style.display = "block"; 
+        }
         
     })
 
