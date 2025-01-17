@@ -317,7 +317,34 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Mostrar el contenedor de resultados
             divRes.style.display = "block"; 
         }
-        
+        else if(op == "search" && rec == "client"){
+            try {
+                // Obtener cliente de la API
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/clientes/${ID}`);
+                if (!response.ok) throw new Error("Error al obtener los datos de la API");
+                
+                cliente = await response.json();
+            } catch (error) {
+                Swal.fire({
+                    title: "Cliente no registrado en la Base de Datos",
+                    icon:"error"
+                })
+                return;
+            }
+            // Crear elementos para mostrar la información
+            const liCliente = document.createElement("li");
+            liCliente.innerHTML = `
+                <strong>ID Cliente:</strong> ${cliente.id_cliente}<br>
+                <strong>Nombre:</strong> ${cliente.nombre_cliente} ${cliente.apellido1 || ""} ${cliente.apellido2 || ""}<br>
+                <strong>Fecha de Nacimiento:</strong> ${new Date(cliente.fecha_nacimiento).toLocaleDateString()}<br>
+                <strong>Puntos de Compra:</strong> ${cliente.puntos_compra}<br>
+                <strong>Fecha de Registro:</strong> ${new Date(cliente.fecha_registro).toLocaleDateString()}<br>
+            `;
+            Result.appendChild(liCliente);
+                
+            // Mostrar el contenedor de resultados
+            divRes.style.display = "block";        
+        }
     })
 
 });
