@@ -584,7 +584,36 @@ document.addEventListener("DOMContentLoaded", async () => {
                     icon: "error",
                 });
             }
-        }   
+        }        
+        else if(op == "delete" && rec == "store"){
+            try {
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/tiendas/${ID}`, {
+                    method: "DELETE",
+                });
+            
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    Swal.fire({
+                        title: "Tienda no registrada en la Base de Datos",
+                        icon: "error",
+                    });
+                    return;
+                }
+            
+                // Mostrar mensaje de éxito si se eliminó correctamente
+                Swal.fire({
+                    title: `Tienda con ID ${ID} eliminada exitosamente.`,
+                    icon: "success",
+                });
+            } catch (error) {
+                console.error("Error:", error.message);
+                Swal.fire({
+                    title: "Hubo un problema al eliminar la tienda.",
+                    text: "Por favor, inténtalo de nuevo más tarde.",
+                    icon: "error",
+                });
+            }
+        }
     })
 
 });
