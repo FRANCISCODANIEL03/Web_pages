@@ -465,6 +465,35 @@ document.addEventListener("DOMContentLoaded", async () => {
                 icon:"success"
             })        
         }
+        else if(op == "update" && rec == "product"){
+            var nuevoProd = {};
+            if (NomP) {nuevoProd.nombre_producto = NomP;}
+            if (Des) {nuevoProd.descripcion = Des;}
+            if (Precio) {nuevoProd.precio = Precio;}
+            if (Stock) {nuevoProd.stock = Stock;}
+        console.log(nuevoProd)
+        try {
+            const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/productos/${ID}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(nuevoProd),
+            });
+            data = await response.json()
+            } catch (error) {
+                console.error("Error:", error.message);
+                Swal.fire({
+                    title: "Hubo un problema al actualizar el producto.",
+                    icon: "error",
+                });
+                return;
+            }
+        Swal.fire({
+            title: `Producto con ID ${ID} actualizado exitosamente.`,
+            icon: "success",
+        });
+        }
     })
 
 });
