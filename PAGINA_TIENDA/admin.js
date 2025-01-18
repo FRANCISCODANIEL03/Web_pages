@@ -556,6 +556,35 @@ document.addEventListener("DOMContentLoaded", async () => {
                 icon:"success"
             })        
         }
+        else if(op == "delete" && rec == "product"){
+            try {
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/productos/${ID}`, {
+                    method: "DELETE",
+                });
+            
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    Swal.fire({
+                        title: "Producto no registrado en la Base de Datos",
+                        icon: "error",
+                    });
+                    return;
+                }
+            
+                // Mostrar mensaje de éxito si se eliminó correctamente
+                Swal.fire({
+                    title: `Producto con ID ${ID} eliminado exitosamente.`,
+                    icon: "success",
+                });
+            } catch (error) {
+                console.error("Error:", error.message);
+                Swal.fire({
+                    title: "Hubo un problema al eliminar el producto.",
+                    text: "Por favor, inténtalo de nuevo más tarde.",
+                    icon: "error",
+                });
+            }
+        }   
     })
 
 });
