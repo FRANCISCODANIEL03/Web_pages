@@ -520,6 +520,42 @@ document.addEventListener("DOMContentLoaded", async () => {
                 icon:"success"
             })
         }
+        else if(op == "update" && rec == "client"){
+            if (!Ape2){
+                Ape2 = null
+            }
+            if(!Fn){
+                Fn = null
+            }
+            var nuevoCliente = {};
+            if (Nom) {nuevoCliente.nombre_cliente = Nom;}
+            if (Ape1) {nuevoCliente.apellido1 = Ape1;}
+            if (Ape2) {nuevoCliente.apellido2 = Ape2;}
+            if (Fn) {nuevoCliente.fecha_nacimiento = Fn;}
+            if (Punt) {nuevoCliente.puntos_compra = Punt;}
+            console.log(nuevoCliente)
+            try {
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/clientes/${ID}`, {
+                    method: "PATCH",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(nuevoCliente)
+                });
+                data = await response.json()
+                console.log(data)
+                } catch (error) {
+                    console.error(error);
+                    Swal.fire({
+                        title:"Hubo un problema al actualizar el cliente.",
+                        icon:"error"
+                    })
+                }
+            Swal.fire({
+                title:`Cliente actualizado exitosamente con el ID: ${data.id_cliente}`,
+                icon:"success"
+            })        
+        }
     })
 
 });
