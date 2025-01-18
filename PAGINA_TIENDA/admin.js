@@ -494,6 +494,32 @@ document.addEventListener("DOMContentLoaded", async () => {
             icon: "success",
         });
         }
+        else if(op == "update" && rec == "store"){
+            const nuevoTienda = {
+                nombre_tienda: NomT
+            };
+            try {
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/tiendas/${ID}`, {
+                    method: "PATCH",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(nuevoTienda)
+                });
+                data = await response.json()
+                } catch (error) {
+                    console.error(error);
+                    Swal.fire({
+                        title:"Hubo un problema al actualizar la tienda.",
+                        icon:"error"
+                    })
+                    return;
+                }
+            Swal.fire({
+                title:`Tienda actualizada exitosamente con el ID: ${data.id_tienda}`,
+                icon:"success"
+            })
+        }
     })
 
 });
