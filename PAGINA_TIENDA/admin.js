@@ -643,6 +643,35 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
             }
         }
+        else if(op == "delete" && rec == "client"){
+            try {
+                const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/clientes/${ID}`, {
+                    method: "DELETE",
+                });
+            
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    Swal.fire({
+                        title: "Cliente no registrado en la Base de Datos",
+                        icon: "error",
+                    });
+                    return;
+                }
+            
+                // Mostrar mensaje de éxito si se eliminó correctamente
+                Swal.fire({
+                    title: `Cliente con ID ${ID} eliminado exitosamente.`,
+                    icon: "success",
+                });
+            } catch (error) {
+                console.error("Error:", error.message);
+                Swal.fire({
+                    title: "Hubo un problema al eliminar el cliente.",
+                    text: "Por favor, inténtalo de nuevo más tarde.",
+                    icon: "error",
+                });
+            }
+        }
     })
 
 });
