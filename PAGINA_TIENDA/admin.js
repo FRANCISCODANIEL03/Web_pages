@@ -682,5 +682,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         }, 5000);
     });
 
+    // Cerrar sesión
+    logoutButton.addEventListener("click", () => {
+        // Redirigir a la página de inicio de sesión
+        window.location.href='index.html'
+    });
+
 
 });
