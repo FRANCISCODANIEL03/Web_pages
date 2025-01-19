@@ -688,5 +688,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.href='index.html'
     });
 
+    //ocultar las opciones 
+    function hiddenB(){
+        searchButton.style.display = "none"
+        insButton.style.display = "none"
+        upButton.style.display = "none"
+        delButton.style.display = "none"
+    }
+
+
 
 });
