@@ -696,6 +696,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         delButton.style.display = "none"
     }
 
-
-
+    //Ocultar los inputs
+    function hiddenI(){
+        divId.style.display = "none"
+        divNom.style.display = "none"
+        divApe1.style.display = "none"
+        divApe2.style.display = "none"
+        divDes.style.display = "none"
+        divFn.style.display = "none"
+        divNomP.style.display = "none"
+        divNomT.style.display = "none"
+        divPrecio.style.display = "none"
+        divPunt.style.display = "none"
+        divStock.style.display = "none"
+        oper.style.display = "none"
+    }
 });
