@@ -14,5 +14,34 @@
         </div>
     </header>
     
+    <main>
+        <div class="content">
+            <!-- Lista de productos disponibles -->
+            <div class="products">
+                <h3>Productos Disponibles</h3>
+                <ul id="product-list">
+                </ul>
+            </div>
+
+            <!-- Selector de productos -->
+            <div class="store-selection">
+                <h3>Agregar Productos</h3>
+                <label for="product-select">Selecciona un producto:</label>
+                <select id="product-select">
+                </select>
+
+                <label for="product-select">Selecciona una Tienda:</label>
+                <select id="store-select">
+                </select>
+                <br>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <br>
+                <button id="add-to-cart-button">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
