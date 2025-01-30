@@ -28,5 +28,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     client.textContent = clientNombre
 
+    try {
+        // Obtener productos de la API
+        const response = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/productos?limit=100");
+        if (!response.ok) throw new Error("Error al obtener los datos de la API");
+        productos = await response.json();
+
+        //Obtener las tiendas
+        const storeResponse = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/tiendas");
+        if (!storeResponse.ok) throw new Error("Error al obtener los datos de la API");
+        tiendas = await storeResponse.json();
+
+        //Cargar el sector de tiendas
+        actualizarListaTiendas(tiendas);
+        actualizarPaginacion(productos); // Crear botones de paginación
+        mostrarPagina(1, productos); // Mostrar la primera página
+
+    } catch (error) {
+        console.error("Error:", error.message);
+        productList.innerHTML = "<li>Error al cargar los productos</li>";
+        storeSelect.innerHTML = "<option>Error al cargar las tiendas</option>";
+    }
 
 });
