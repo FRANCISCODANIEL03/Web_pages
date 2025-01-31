@@ -50,4 +50,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         storeSelect.innerHTML = "<option>Error al cargar las tiendas</option>";
     }
 
+    // Función para mostrar una página específica
+    function mostrarPagina(page, productos) {
+        currentPage = page;
+
+        // Calcular el rango de productos a mostrar
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const productosPagina = productos.slice(startIndex, endIndex);
+
+        // Actualizar la lista y el selector
+        actualizarListaProductos(productosPagina);
+    }
+
 });
