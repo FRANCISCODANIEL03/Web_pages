@@ -108,4 +108,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 
+    // Función para actualizar el selector de tiendas
+    function actualizarListaTiendas(tiendas) {
+        storeSelect.innerHTML = "";
+
+        tiendas.forEach(tienda => {
+            const option = document.createElement("option");
+            option.value = tienda.id_tienda; // Usar el ID de la tienda como valor
+            option.textContent = tienda.nombre_tienda; // Mostrar el nombre de la tienda
+            storeSelect.appendChild(option);
+        });
+    }
+
 });
