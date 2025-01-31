@@ -63,4 +63,27 @@ document.addEventListener("DOMContentLoaded", async () => {
         actualizarListaProductos(productosPagina);
     }
 
+    // Función para actualizar la lista y el selector
+    function actualizarListaProductos(productosPagina) {
+        productList.innerHTML = "";
+        productSelect.innerHTML = "";
+
+        productosPagina.forEach(producto => {
+            // Crear un elemento de lista para cada producto
+            const li = document.createElement("li");
+            li.textContent = `${producto.nombre_producto} - Stock: ${producto.stock} - Precio: $${producto.precio}`;
+            li.setAttribute("data-id", producto.id_producto);
+            li.setAttribute("title", producto.descripcion || "Sin descripción");
+            productList.appendChild(li);
+
+            // Crear una opción para el selector
+            const option = document.createElement("option");
+            option.value = producto.id_producto;
+            option.textContent = producto.nombre_producto;
+            option.dataset.price = producto.precio;
+            option.dataset.stock = producto.stock;
+            productSelect.appendChild(option);
+        });
+    }
+
 });
