@@ -86,4 +86,26 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
+    // Función para crear los botones de paginación
+    function actualizarPaginacion(productos) {
+        paginationContainer.innerHTML = "";
+        const totalPages = Math.ceil(productos.length / itemsPerPage);
+
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement("button");
+            button.textContent = i;
+            button.classList.add("pagination-button");
+            if (i === currentPage) button.classList.add("active");
+
+            // Evento para cambiar de página
+            button.addEventListener("click", () => {
+                mostrarPagina(i, productos);
+                document.querySelectorAll(".pagination-button").forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+            });
+
+            paginationContainer.appendChild(button);
+        }
+    }
+
 });
