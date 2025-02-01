@@ -131,4 +131,60 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.href='index.html'
     });
 
+    // Evento para agregar productos al carrito
+    addToCartButton.addEventListener("click", () => {
+        const selectedOption = productSelect.options[productSelect.selectedIndex];
+        const productId = selectedOption.value;
+        const productName = selectedOption.textContent;
+        const productPrice = parseFloat(selectedOption.dataset.price);
+        let productStock = parseInt(selectedOption.dataset.stock);
+        const quantity = parseInt(quantityInput.value);
+        if(parseInt(productId) < 0){
+            Swal.fire({
+                title:"Por favor, ingresa un id valido",
+                icon:"warning"
+            })
+            return;
+        }
+        if(quantity < 1){
+            Swal.fire({
+                title:"Por favor, ingresa una cantidad valida",
+                icon:"warning"
+            })
+            return;
+        }
+        // Verificar stock disponible
+        if (quantity > productStock) {
+            Swal.fire({
+                title:`No hay suficiente stock de ${productName}.`,
+                icon:"warning"
+            })
+            return;
+        }
+
+        // Actualizar el stock
+        productStock -= quantity;
+        selectedOption.dataset.stock = productStock;
+
+        // Actualizar el producto en la lista de productos
+        const productElement = productList.querySelector(`[data-id="${productId}"]`);
+        productElement.textContent = `${productName} - Stock: ${productStock} - Precio: $${productPrice}`;
+
+        // Agregar al carrito
+        const totalProductPrice = productPrice * quantity;
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            Producto: ${productName}<br>
+            Cantidad: ${quantity}<br>
+            Total: $${totalProductPrice.toFixed(2)}
+        `;
+        cartList.appendChild(listItem);
+
+        carrito.push({productoId: parseInt(productId), cantidad_productos: quantity});
+
+        // Actualizar el precio total
+        total += totalProductPrice;
+        totalPriceElement.textContent = `Precio Total: $${total.toFixed(2)}`;
+    });
+
 });
