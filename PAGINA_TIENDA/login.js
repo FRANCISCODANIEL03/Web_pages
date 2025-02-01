@@ -125,4 +125,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         cart.classList.toggle("visible");
     });
 
+    // Cerrar sesión
+    logoutButton.addEventListener("click", () => {
+        // Redirigir a la página de inicio de sesión
+        window.location.href='index.html'
+    });
+
 });
