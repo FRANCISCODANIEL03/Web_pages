@@ -187,4 +187,56 @@ document.addEventListener("DOMContentLoaded", async () => {
         totalPriceElement.textContent = `Precio Total: $${total.toFixed(2)}`;
     });
 
+    // Realizar compra
+    checkoutButton.addEventListener("click", async () => {
+        const tiendaId = parseInt(storeSelect.value);
+
+        if (!tiendaId) {
+            Swal.fire({
+                title:"Por favor selecciona una tienda.",
+                icon:"warning"
+            })
+            return;
+        }
+
+        if (carrito.length === 0) {
+            Swal.fire({
+                title:"El carrito está vacío.",
+                icon:"warning"
+            })
+            return;
+        }
+
+        const data = {
+            clienteId,
+            tiendaId,
+            detalles: carrito
+        };
+
+        try {
+            const response = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/compras", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+            const data2 = await response.json()
+
+            if (!response.ok) throw new Error("Error al realizar la compra");
+            Swal.fire({
+                title:`Compra realizada con éxito con el ID: ${data2.id_compra}`,
+                icon:"success"
+            })
+            carrito = [];
+            total = 0;
+            totalPriceElement.textContent = "Precio Total: $0";
+            cartList.innerHTML = "";
+        } catch (error) {
+            console.error("Error:", error.message);
+
+            alert("Hubo un problema al realizar la compra.");
+        }
+    });
+
 });
