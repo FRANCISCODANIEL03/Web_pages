@@ -117,3 +117,8 @@ footer {
     text-align: left; 
     font-weight: bold;
 }
+
+.options h3,
+.campos h3 {
+    margin-bottom: 1rem;
+}
