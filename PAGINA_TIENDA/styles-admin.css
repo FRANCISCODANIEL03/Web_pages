@@ -110,3 +110,10 @@ footer {
     height: auto;
     align-items: center;
 }
+
+#result_list {
+    list-style: disc; 
+    margin: 0;               
+    text-align: left; 
+    font-weight: bold;
+}
