@@ -135,3 +135,9 @@ footer {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
+
+.input-box_2{
+    position: relative;
+    margin: 18px 0;
+    width: 85%;
+}
