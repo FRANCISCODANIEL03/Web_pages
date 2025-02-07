@@ -199,3 +199,7 @@ input:focus~label{
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
 }
+
+#cart.visible {
+    transform: translateX(0);
+}
