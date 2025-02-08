@@ -65,3 +65,7 @@ aside {
 aside.visible {
     transform: translateX(0);
 }
+
+aside h3 {
+    margin-top: 0;
+}
