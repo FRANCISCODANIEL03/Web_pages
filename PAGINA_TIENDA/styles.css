@@ -39,3 +39,10 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+main {
+    flex: 1;
+    display: flex; 
+    padding: 2rem;
+    text-align: center;
+}
