@@ -154,3 +154,7 @@ footer {
     white-space: nowrap;
     pointer-events: none;
 }
+
+#product-list li:hover::after{
+    opacity: 1;
+}
