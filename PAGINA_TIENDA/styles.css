@@ -111,3 +111,8 @@ footer {
     height: auto;
     align-items: center;
 }
+
+.products h3,
+.store-selection h3 {
+    margin-bottom: 1rem;
+}
