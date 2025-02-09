@@ -98,3 +98,16 @@ footer {
     width: 100%;
     align-items: center;
 }
+
+.store-selection{
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 500px; 
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    height: auto;
+    align-items: center;
+}
