@@ -133,3 +133,8 @@ footer {
 #product-list li:last-child {
     border-bottom: none;
 }
+
+#product-list li:hover {
+    background-color: #f0f0f0;
+    border-color: #512dab;
+}
