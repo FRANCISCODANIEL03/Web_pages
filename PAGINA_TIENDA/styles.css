@@ -245,3 +245,7 @@ input[type="number"]:hover {
     color: white;
     border-color: #512dab;
 }
+
+.pagination-button:hover {
+    background-color: #ddd;
+}
