@@ -231,3 +231,11 @@ input[type="number"]:hover {
     margin-top: 1rem;
     gap: 0.5rem;
 }
+
+.pagination-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 5px;
+}
