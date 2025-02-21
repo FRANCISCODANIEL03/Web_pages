@@ -1,3 +1,10 @@
 body{
     background-color: #3d4e66;
 }
+
+.tag-list{
+    width: 30rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
