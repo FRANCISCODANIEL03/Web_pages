@@ -44,3 +44,13 @@ body{
     inset: 0;
     pointer-events: none;
 }
+
+@keyframes loop {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-30%);
+    }
+}
