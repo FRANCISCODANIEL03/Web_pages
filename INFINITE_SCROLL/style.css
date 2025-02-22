@@ -8,3 +8,10 @@ body{
     position: relative;
     overflow: hidden;
 }
+
+.inner{
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 5s linear infinite;
+}
