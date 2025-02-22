@@ -30,3 +30,8 @@ body{
     0 0.1rem 0.5rem #0000004d,
     0 0.2rem 1.5rem #00000066;
 }
+
+.tag span{
+    font-size: 1.2rem;
+    color: #64748b;
+}
