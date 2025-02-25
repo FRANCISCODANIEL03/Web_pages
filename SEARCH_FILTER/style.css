@@ -12,3 +12,8 @@ input{
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+}
