@@ -4,3 +4,7 @@ html, body{
     padding: 0;
     font-size: 25px;
 }
+
+body{
+    background: #e1e9ee;
+}
