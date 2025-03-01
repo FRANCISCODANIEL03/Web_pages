@@ -44,3 +44,9 @@ body{
     font-size: 0.8rem;
     color: #fff;
 }
+
+.menu-group{
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
