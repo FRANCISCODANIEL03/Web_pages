@@ -50,3 +50,10 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+
+ul li a,
+ul li{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
