@@ -8,3 +8,13 @@ html, body{
 body{
     background: #e1e9ee;
 }
+
+.container-sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #283e4a;
+    height: 100vh;
+    width: 300px;
+}
