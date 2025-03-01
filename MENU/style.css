@@ -27,3 +27,8 @@ body{
     align-items: center;
     list-style-type: none;
 }
+
+.menu-theme{
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
