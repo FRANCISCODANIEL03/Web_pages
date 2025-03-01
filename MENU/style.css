@@ -36,3 +36,11 @@ body{
 .menu-theme li:first-child{
     color: #0077b5;
 }
+
+.time-show{
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 60%);
+    font-size: 0.8rem;
+    color: #fff;
+}
