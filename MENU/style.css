@@ -84,3 +84,7 @@ ul li a i{
 .fas.fa-bars{
     left: 20px;
 }
+
+.active{
+    border-bottom: 2px solid #0077b5;
+}
