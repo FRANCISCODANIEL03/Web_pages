@@ -57,3 +57,7 @@ ul li{
     cursor: pointer;
     color: #fff;
 }
+
+ul li a:hover{
+    opacity: .4;
+}
