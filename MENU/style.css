@@ -80,3 +80,7 @@ ul li a i{
     display: none;
     left: 310px;
 }
+
+.fas.fa-bars{
+    left: 20px;
+}
