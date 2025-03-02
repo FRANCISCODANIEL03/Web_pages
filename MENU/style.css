@@ -61,3 +61,7 @@ ul li{
 ul li a:hover{
     opacity: .4;
 }
+
+ul li a i{
+    margin-right: 10px;
+}
