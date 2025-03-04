@@ -19,3 +19,15 @@ const sidebarClose = ()=>{
     btnClose.style.display = 'none';
     btnOpen.style.display = 'block';
 }
+
+const enableLigthMode = ()=>{
+    elemBody.style.background = '#f5f5f5';
+    elemSidebar.style.background = '#e1e9ee';
+    btnLigthMode.style.color = '#0077b5';
+    btnDarkmode.style.color = '#000';
+    timer.style.color = '#000';
+
+    for (let i = 0; i < listSiderbar.length; i++){
+        listSiderbar[i].style.color = '#000';
+    }
+}
