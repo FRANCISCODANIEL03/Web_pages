@@ -42,3 +42,5 @@ const enableDarkMode = ()=>{
         listSiderbar[i].style.color = '#fff';
     }
 }
+
+btnOpen.addEventListener('click', sidebarOpen);
