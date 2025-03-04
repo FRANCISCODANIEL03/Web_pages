@@ -44,3 +44,4 @@ const enableDarkMode = ()=>{
 }
 
 btnOpen.addEventListener('click', sidebarOpen);
+btnClose.addEventListener('click', sidebarClose);
