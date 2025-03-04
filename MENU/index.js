@@ -31,3 +31,14 @@ const enableLigthMode = ()=>{
         listSiderbar[i].style.color = '#000';
     }
 }
+
+const enableDarkMode = ()=>{
+    elemBody.style.background = '#e1e9ee';
+    elemSidebar.style.background = '#283e4a';
+    btnDarkmode.style.color = '#0077b5';
+    btnLigthMode.style.color = '#fff';
+    timer.style.color = '#fff';
+    for (let i = 0; i < listSiderbar.length; i++){
+        listSiderbar[i].style.color = '#fff';
+    }
+}
