@@ -6,3 +6,4 @@ const btnDarkmode = document.getElementById('dark-mode');
 const elemSidebar = document.getElementById('sidebar');
 const listSiderbar = document.getElementsByTagName('a');
 const elemBody = document.getElementsByTagName('body')[0];
+const timer = document.getElementById('time');
