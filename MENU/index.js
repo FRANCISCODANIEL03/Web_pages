@@ -7,3 +7,9 @@ const elemSidebar = document.getElementById('sidebar');
 const listSiderbar = document.getElementsByTagName('a');
 const elemBody = document.getElementsByTagName('body')[0];
 const timer = document.getElementById('time');
+
+const sidebarOpen = ()=>{
+    sidebar.style.display = 'block';
+    btnClose.style.display = 'block';
+    btnOpen.style.display = 'none';
+}
