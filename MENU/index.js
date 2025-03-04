@@ -13,3 +13,9 @@ const sidebarOpen = ()=>{
     btnClose.style.display = 'block';
     btnOpen.style.display = 'none';
 }
+
+const sidebarClose = ()=>{
+    sidebar.style.display = 'none';
+    btnClose.style.display = 'none';
+    btnOpen.style.display = 'block';
+}
