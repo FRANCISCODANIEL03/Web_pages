@@ -45,3 +45,5 @@ const enableDarkMode = ()=>{
 
 btnOpen.addEventListener('click', sidebarOpen);
 btnClose.addEventListener('click', sidebarClose);
+btnLigthMode.addEventListener('click', enableLigthMode);
+btnDarkmode.addEventListener('click', enableDarkMode);
