@@ -47,3 +47,33 @@ btnOpen.addEventListener('click', sidebarOpen);
 btnClose.addEventListener('click', sidebarClose);
 btnLigthMode.addEventListener('click', enableLigthMode);
 btnDarkmode.addEventListener('click', enableDarkMode);
+
+setInterval(()=>{
+    const time =  new Date;
+    let seconds = time.getSeconds();
+    let minutes = time.getMinutes();
+    let hours = time.getHours();
+    let day = time.getDay();
+
+    switch(day){
+        case 0: day = 'Sun'; break;
+        case 1: day = 'Mon'; break;
+        case 2: day = 'Tue'; break;
+        case 3: day = 'Wed'; break;
+        case 4: day = 'Thu'; break;
+        case 5: day = 'Fri'; break;
+        case 6: day = 'Sat'; break;
+    }
+
+    if(seconds == 0 || seconds < 10) seconds = `0${seconds}`;
+    if(minutes == 0 || minutes < 10) minutes = `0${minutes}`;
+
+    const timer = document.getElementById('time');
+    timer.innerHTML = `${day}, ${hours}:${minutes}:${seconds}`;
+    list = document.getElementsByTagName('li');
+
+    for(let i = 0; i < list.length; i++){
+        list[i].className = '';
+    }
+    list[value].className = 'active';
+})
