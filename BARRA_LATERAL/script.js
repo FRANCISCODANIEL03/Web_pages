@@ -8,3 +8,9 @@ let fullSidebarHeigth = 'calc(100vh - 32px)';
 sidebarToggler.addEventListener('click', ()=>{
     sidebar.classList.toggle('collapsed');
 })
+
+const toggleMenu = (isMenuActive) =>{
+    sidebar.computedStyleMap.heigth = isMenuActive ? `${sidebar.scrollHeight}PX` : collapsedSidebarHeigth;
+    menuToggler.querySelector('span').innerHTML = isMenuActive ? 'close' : 'menu';
+}
+
