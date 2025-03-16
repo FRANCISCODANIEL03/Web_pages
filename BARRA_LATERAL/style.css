@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: linear-gradient(#ebb9ff, #dd86ff);
+    min-height: 100vh;
+}
