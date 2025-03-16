@@ -18,3 +18,13 @@ menuToggler.addEventListener('click', ()=>{
     toggleMenu(sidebar.classList.toggle('menu-active'));
 })
 
+window.addEventListener('resize', ()=>{
+    if (window.innerHTML >= 1024){
+        sidebar.computedStyleMap.heigth = fullSidebarHeigth;
+    } else {
+        sidebar.classList.remove('collapsed');
+        sidebar.style.heigth = 'auto';
+        toggleMenu(sidebar.classList.contains('menu-active'))
+    }
+});
+
