@@ -14,3 +14,7 @@ const toggleMenu = (isMenuActive) =>{
     menuToggler.querySelector('span').innerHTML = isMenuActive ? 'close' : 'menu';
 }
 
+menuToggler.addEventListener('click', ()=>{
+    toggleMenu(sidebar.classList.toggle('menu-active'));
+})
+
