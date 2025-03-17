@@ -19,3 +19,7 @@ body{
     background-color: #151a2d;
     transition: width 0.4s ease, transform 0.4s ease;
 }
+
+.sidebar.collapsed{
+    width: 85px;
+}
