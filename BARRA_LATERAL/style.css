@@ -61,3 +61,8 @@ body{
 .sidebar-header .menu-toggler{
     display: none;
 }
+
+.sidebar-header .sidebar-toggler{
+    position: absolute;
+    right: 20px;
+}
