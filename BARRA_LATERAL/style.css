@@ -57,3 +57,7 @@ body{
     position: absolute;
     right: 20px;
 }
+
+.sidebar-header .menu-toggler{
+    display: none;
+}
