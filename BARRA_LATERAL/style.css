@@ -8,3 +8,14 @@ body{
     background: linear-gradient(#ebb9ff, #dd86ff);
     min-height: 100vh;
 }
+
+.sidebar{
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    height: calc(100vh - 32px);
+    width: 270px;
+    border-radius: 16px;
+    background-color: #151a2d;
+    transition: width 0.4s ease, transform 0.4s ease;
+}
