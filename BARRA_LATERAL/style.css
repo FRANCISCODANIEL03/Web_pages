@@ -52,3 +52,8 @@ body{
     cursor: pointer;
     transition: background-color 0.4s ease;
 }
+
+.sidebar-header .sidebar-toggler{
+    position: absolute;
+    right: 20px;
+}
