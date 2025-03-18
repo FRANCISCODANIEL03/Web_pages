@@ -70,3 +70,7 @@ body{
 .sidebar-header .menu-toggler{
     display: none;
 }
+
+.sidebar.collapsed .sidebar-header .toggler{
+    transform: translate(-4px, 65px);
+}
