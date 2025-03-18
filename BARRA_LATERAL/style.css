@@ -93,3 +93,7 @@ body{
     transform: translateY(15px);
     transition: transform 0.4s ease;
 }
+
+.sidebar.collapsed .primary-nav{
+    transform: translateY(65px);
+}
