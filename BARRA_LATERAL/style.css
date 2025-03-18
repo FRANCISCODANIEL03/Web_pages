@@ -74,3 +74,8 @@ body{
 .sidebar.collapsed .sidebar-header .toggler{
     transform: translate(-4px, 65px);
 }
+
+.sidebar-header .toggler span{
+    font-size: 1.75rem;
+    transition: transition 0.4s ease;
+}
