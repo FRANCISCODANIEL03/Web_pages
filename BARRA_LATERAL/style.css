@@ -79,3 +79,7 @@ body{
     font-size: 1.75rem;
     transition: transition 0.4s ease;
 }
+
+.sidebar.collapsed .toggler span{
+    transform: rotate(180deg);
+}
