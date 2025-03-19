@@ -112,3 +112,7 @@ body{
 .sidebar-nav i{
     font-size: 25px;
 }
+
+.sidebar.collapsed .nav-link{
+    border-radius: 12px;
+}
