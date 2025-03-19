@@ -116,3 +116,7 @@ body{
 .sidebar.collapsed .nav-link{
     border-radius: 12px;
 }
+
+.sidebar .nav-link .nav-label{
+    transition: opacity 0.3s ease;
+}
