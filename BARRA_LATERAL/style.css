@@ -130,3 +130,7 @@ body{
     background-color: #fff;
     color: #151515;
 }
+
+.sidebar-nav .nav-item{
+    position: relative;
+}
