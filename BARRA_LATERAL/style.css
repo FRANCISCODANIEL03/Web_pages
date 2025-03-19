@@ -150,3 +150,7 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
+.sidebar.collapsed .nav-tooltip{
+    display: block;
+}
