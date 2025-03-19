@@ -134,3 +134,19 @@ body{
 .sidebar-nav .nav-item{
     position: relative;
 }
+
+.sidebar-nav .nav-tooltip{
+    position: absolute;
+    top: -10px;
+    left: calc(100% + 25px);
+    padding: 6px 12px;
+    color: #151a2d;
+    background-color: #fff;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
