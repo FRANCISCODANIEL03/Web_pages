@@ -154,3 +154,9 @@ body{
 .sidebar.collapsed .nav-tooltip{
     display: block;
 }
+
+.nav-item:hover .nav-tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(50%);
+}
