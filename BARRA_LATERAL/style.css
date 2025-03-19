@@ -125,3 +125,8 @@ body{
     opacity: 0;
     pointer-events: none;
 }
+
+.sidebar-nav .nav-link:hover{
+    background-color: #fff;
+    color: #151515;
+}
