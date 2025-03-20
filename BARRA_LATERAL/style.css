@@ -160,3 +160,9 @@ body{
     pointer-events: auto;
     transform: translateY(50%);
 }
+
+.sidebar-nav .secondary-nav{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
