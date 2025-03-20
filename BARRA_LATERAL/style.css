@@ -214,4 +214,10 @@ body{
         padding: 0 10px;
     }
 
+    .nav-link{
+        gap: 10px;
+        padding: 10px;
+        font-size: 094rem;
+    }
+
 }
