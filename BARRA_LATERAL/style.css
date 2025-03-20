@@ -177,4 +177,8 @@ body{
         scrollbar-width: none;
     }
 
+    .sidebar.menu-active{
+        overflow-y: auto;
+    }
+
 }
