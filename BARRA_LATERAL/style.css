@@ -195,4 +195,9 @@ body{
         height: 40px;
     }
 
+    .sidebar-header .sidebar-toggler,
+    .nav-item:hover .nav-tooltip{
+        display: none;
+    }
+
 }
