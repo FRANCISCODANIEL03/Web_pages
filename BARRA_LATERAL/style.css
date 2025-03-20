@@ -206,4 +206,8 @@ body{
         height: 30px;
     }
 
+    .menu-toggler span{
+        font-size: 1.3rem;
+    }
+
 }
