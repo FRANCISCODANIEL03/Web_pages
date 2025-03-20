@@ -200,4 +200,10 @@ body{
         display: none;
     }
 
+    .sidebar-header .menu-toggler{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+
 }
