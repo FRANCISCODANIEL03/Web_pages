@@ -190,4 +190,9 @@ body{
         background: #151a2d;
     }
 
+    .sidebar-header .header-logo img{
+        width: 40px;
+        height: 40px;
+    }
+
 }
