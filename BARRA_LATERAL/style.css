@@ -210,4 +210,8 @@ body{
         font-size: 1.3rem;
     }
 
+    .sidebar-nav .nav-list{
+        padding: 0 10px;
+    }
+
 }
