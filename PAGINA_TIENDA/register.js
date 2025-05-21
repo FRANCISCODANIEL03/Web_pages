@@ -1,88 +1,105 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    const URL = "http://localhost:3001"
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-pass');
+    const toggleButton = document.getElementById('togglePassword');
+    const toggleButton2 = document.getElementById('togglePassword2');
+    const icon = document.getElementById('iconPassword');
+    const icon2 = document.getElementById('iconPassword2');
+
+    // Mostrar/ocultar ícono según si hay texto
+    passwordInput.addEventListener('input', () => {
+        toggleButton.classList.toggle('hidden', passwordInput.value === '');
+    });
+
+    toggleButton.addEventListener('click', () => {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = !isPassword ? 'password' : 'text';
+        icon.className = !isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
+    });
+
+    confirmPasswordInput.addEventListener('input', () => {
+        toggleButton2.classList.toggle('hidden', confirmPasswordInput.value === '');
+    });
+
+    toggleButton2.addEventListener('click', () => {
+        const isPassword = confirmPasswordInput.type === 'password';
+        confirmPasswordInput.type = !isPassword ? 'password' : 'text';
+        icon2.className = !isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
+    });
+
     const regButton = document.getElementById("reg");
-    const nombre = document.getElementById("nombre");
-    const apellido1 = document.getElementById("ape1");
-    var apellido2 = document.getElementById("ape2").value;
-    
+
     regButton.addEventListener("click", async () => {
-    var fechaNacimiento = document.getElementById("fecha_nac").value;
-    const valNombre = nombre.value.trim()
-    const valApe1 = nombre.value.trim()
-    if (!valNombre || !valApe1) {
-        Swal.fire({
-            title:"Por favor, completa todos los campos.",
-            icon:"warning"
-        })
-        return;
-    }
-    // Validar que la fecha sea válida y en el pasado
-    /*if (!validarFechaNacimiento(fechaNacimiento)) {
-        Swal.fire({
-            title:"Por favor, ingresa una fecha de nacimiento válida.",
-            icon:"warning"
-        })
-        return;
-    }*/
-    /*const fechaN = new Date(document.getElementById("fecha_nac").value)
-    const anio = fechaN.getFullYear()
-    const mes = fechaN.getUTCMonth()
-    const dia = fechaN.getDate()
-    
-    const fechaF = `${anio}-${mes}-${dia}`
-    console.log(fechaF)
-    console.log(fechaN)*/
-    // Crear el objeto a enviar
-    if (!apellido2){
-        apellido2 = null
-    }
-    if(!fechaNacimiento){
-        fechaNacimiento = null
-    }
-    const nuevoCliente = {
-        nombre_cliente: nombre.value,
-        apellido1: apellido1.value,
-        apellido2: apellido2,
-        fecha_nacimiento: fechaNacimiento,
-        puntos_compra: 0 // Por defecto
-    };
-    console.log(nuevoCliente)
-    try {
-        const response = await fetch("https://api-tienda-don-pepe.onrender.com/api/v1/clientes", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
+        const notyf = new Notyf({
+            position: {
+                x: 'right',
+                y: 'top'
             },
-            body: JSON.stringify(nuevoCliente)
+            types: [
+                {
+                    type: 'warning',
+                    background: 'orange',
+                }
+            ]
         });
-        const data = await response.json()
-        console.log(data)
-        if (!response.ok) {
-            throw new Error("Error al registrar el cliente.");
+        const nombre = document.getElementById("nombre").value;
+        const apellido1 = document.getElementById("ape1").value;
+        const email = document.getElementById("email").value;
+        var apellido2 = document.getElementById("ape2").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-pass").value;
 
+        if (!nombre.trim() || !apellido1.trim() || !email.trim() || !password.trim() || !confirmPassword.trim()) {
+            notyf.open({
+                type: 'warning',
+                message: 'Por favor, completa todos los campos',
+            });
+            return;
         }
-        Swal.fire({
-            title:`Cliente registrado exitosamente con el ID: ${data.id_cliente}`,
-            icon:"success"
-        })
+        if (password !== confirmPassword) {
+            notyf.error('Las constraseñas no coinciden');
+            return;
+        }
+        // Crear el objeto a enviar
+        if (apellido2 == "") {
+            apellido2 = null
+        }
 
-    } catch (error) {
-        console.error(error);
-        Swal.fire({
-            title:"Hubo un problema al registrar el cliente.",
-            icon:"warning"
-        })
-    }
-});
+        var data = null
 
-// Validar formato y rango de la fecha de nacimiento
-/*function validarFechaNacimiento(fecha) {
-    const hoy = new Date();
-    const fechaIngresada = new Date(fecha);
+        const nuevoUsuario = {
+            nombre: nombre,
+            apellido1: apellido1,
+            apellido2: apellido2,
+            password: password,
+            email: email
+        };
+        try {
+            const response = await fetch(`${URL}/api/v1/auth/register`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(nuevoUsuario)
+            });
+            data = await response.json()
+            console.log(data)
+            if (!response.ok) {
+                throw new Error("Error al registrar el usuario");
+            }
+            notyf.success('Usuario registrado exitosamente');
 
-    if (isNaN(fechaIngresada.getTime())) {
-        return false; // Fecha inválida
-    }
+            // Redirigir a la página de inicio de sesión después de 2 segundos
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 2000);
 
-    return fechaIngresada < hoy; // La fecha debe ser anterior a hoy
-}*/
+        } catch (error) {
+            console.error(error);
+            for (const err of data.message) {
+                notyf.error(err);
+            }
+        }
+    });
 });
