@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link rel="stylesheet" href="styles-admin.css">
+    <title>ADMINISTRADOR</title>
 </head>
+
 <body>
     <header>
         <div class="navbar">
             <h2 id="client">ADMINISTRADOR</h2>
             <button id="cart-button">Recursos</button>
+            <button id="verProductosBtn">Ver reporte</button>
         </div>
     </header>
-    
+
+    <div id="modalProductos" class="modal hidden">
+        <div class="modal-content">
+            <button id="cerrarModalBtn">✖</button>
+            <h2>Inventario de productos</h2>
+            <div id="contenedorProductos"></div>
+        </div>
+    </div>
+
     <main>
         <div class="content">
             <div class="options">
                 <h2 id="name"></h2>
                 <h3>Operaciones Disponibles</h3>
-                <button id="search" style="display: none;">Buscar</button>
-                <button id="insert" style="display: none;">Insertar</button>
-                <button id="update" style="display: none;">Actualizar</button>
-                <button id="delete" style="display: none;">Eliminar</button>      
+                <h4 id="msg">Selecciona un recurso</h4>
+                <button id="search" class="animated-hidden">Buscar</button>
+                <button id="insert" class="animated-hidden">Insertar</button>
+                <button id="update" class="animated-hidden">Actualizar</button>
+                <button id="delete" class="animated-hidden">Eliminar</button>
             </div>
 
             <div class="campos">
                 <h2 id="opera" style="display: none;"></h2>
                 <h3>CAMPOS</h3>
+                <h4 id="msg2">Selecciona una operacion</h4>
                 <div class="input-box_2" id="did" style="display: none;">
                     <input type="number" id="id" placeholder="">
+                    <label>ID</label>
+                </div>
+                <div class="input-box_2" id="didp" style="display: none;">
+                    <input type="number" id="idp" placeholder="">
                     <label>ID</label>
                 </div>
                 <div class="input-box_2" id="dnombre" style="display: none;">
@@ -44,17 +63,23 @@
                     <input type="text" id="ape2" placeholder="">
                     <label>APELLIDO 2</label>
                 </div>
-                <div class="input-box_2" id="dfecha" style="display: none;">
-                    <input type="text" id="fecha" placeholder="">
-                    <label>FECHA DE NACIMIENTO</label>
+                <div class="input-box_2" id="demail" style="display: none;">
+                    <input type="text" id="email" placeholder="pablo@gmail.com">
+                    <label>EMAIL</label>
                 </div>
-                <div class="input-box_2" id="dnombret" style="display: none;">
-                    <input type="text" id="nombret" placeholder="">
-                    <label>NOMBRE DE LA TIENDA</label>
+                <div class="input-box_2 password" id="dpass" style="display: none;">
+                    <input type="password" id="password" placeholder="****">
+                    <label>CONTRASEÑA</label>
+                    <button type="button" id="togglePassword" class="toggle-password hidden">
+                        <i class="bi bi-eye-slash" id="iconPassword"></i>
+                    </button>
                 </div>
-                <div class="input-box_2" id="dpuntos" style="display: none;">
-                    <input type="text" id="puntos" placeholder="">
-                    <label>PUNTOS DE COMPRA</label>
+                <div class="input-box_2 password" id="dpassc" style="display: none;">
+                    <input type="password" id="confirm-pass" placeholder="****">
+                    <label>CONFIRMAR CONTRASEÑA</label>
+                    <button type="button" id="togglePassword2" class="toggle-password hidden">
+                        <i class="bi bi-eye-slash" id="iconPassword2"></i>
+                    </button>
                 </div>
                 <div class="input-box_2" id="dnombrep" style="display: none;">
                     <input type="text" id="nombrep" placeholder="">
@@ -63,6 +88,15 @@
                 <div class="input-box_2" id="ddescrip" style="display: none;">
                     <input type="text" id="descrip" placeholder="">
                     <label>DESCRIPCION</label>
+                </div>
+                <div class="input-box_2" id="dcat" style="display: none;">
+                    <h3>CATEGORIA</h3>
+                    <select id="category">
+                        <option value="Otra">Otra</option>
+                        <option value="Bebidas alcohólicas">Bebidas alcohólicas</option>
+                        <option value="Bebidas energéticas">Bebidas energéticas</option>
+                        <option value="Agua">Agua</option>
+                    </select>
                 </div>
                 <div class="input-box_2" id="dprecio" style="display: none;">
                     <input type="number" id="precio" placeholder="">
@@ -73,24 +107,23 @@
                     <label>STOCK</label>
                 </div>
                 <button id="btn_op" style="display: none;">Ejecutar Operacion</button>
+                <button id="btn_fac" style="display: none;">Imprimir Factura</button>
             </div>
             <div class="options" style="display: none;" id="result">
                 <h2>Resultado</h2>
                 <ul id="result_list">
-
                 </ul>
             </div>
         </div>
     </main>
-    
-    <aside id="cart" class="hidden">
+
+    <aside id="cart">
         <h2>RECURSOS</h2>
         <button id="prod">Productos</button>
-        <button id="store">Tiendas</button>
         <button id="buy">Compras</button>
-        <button id="cliente">Clientes</button>
+        <button id="cliente">Usuarios</button>
     </aside>
-    
+
     <footer>
         <div class="footer-content">
             <button id="logout-button">Cerrar Sesión</button>
@@ -98,6 +131,7 @@
     </footer>
 
     <script src="admin.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 </body>
+
 </html>
