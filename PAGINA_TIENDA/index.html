@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
     <form>
         <h2>LOGIN</h2>
         <div class="input-box">
-            <input type="number" id="user-input" placeholder="">
-            <label>ID</label>
+            <input type="text" id="email" placeholder="">
+            <label>EMAIL</label>
         </div>
         <div class="input-box">
-            <input type="text" id="user-name" placeholder="">
-            <label>CLIENT</label>
+            <input type="password" id="password" placeholder="">
+            <label>CONTRASEÑA</label>
+            <button type="button" id="togglePassword" class="toggle-password hidden">
+                <i class="bi bi-eye-slash" id="iconPassword"></i>
+            </button>
         </div>
-        <button class="btn" id="login" type="button">Login</button>
+        <button class="btn" id="login" type="button"><span>Login</span></button>
         <div class="signup-link">
             <a href="register.html">Sign up</a>
-         </div>
+        </div>
     </form>
     <script src="user.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 </body>
+
 </html>
