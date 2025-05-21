@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Carrito de Compras</title>
 </head>
+
 <body>
     <header>
         <div class="navbar">
             <h2 id="client"></h2>
             <button id="cart-button">Carrito</button>
         </div>
+        <h1>DEPOSITO DE BEBIDAS</h1>
     </header>
-    
+
     <main>
         <div class="content">
             <!-- Lista de productos disponibles -->
             <div class="products">
                 <h3>Productos Disponibles</h3>
+                <div>
+                    <h3 for="categoryFilter">Categoría</h3>
+                    <select id="categoryFilter">
+                        <option value="todos">Todos</option>
+                    </select>
+                </div>
                 <ul id="product-list">
                 </ul>
             </div>
@@ -29,10 +40,6 @@
                 <label for="product-select">Selecciona un producto:</label>
                 <select id="product-select">
                 </select>
-
-                <label for="product-select">Selecciona una Tienda:</label>
-                <select id="store-select">
-                </select>
                 <br>
 
                 <label for="quantity">Cantidad:</label>
@@ -42,22 +49,24 @@
             </div>
         </div>
     </main>
-    
+
     <aside id="cart" class="hidden">
         <h2>Carrito de Compras</h2>
         <ul id="cart-list">
         </ul>
-        <h4 id="total-price">Precio Total: $0</h4>
+        <h4 id="total-price"></h4>
     </aside>
-    
+
     <footer>
         <div class="footer-content">
             <button id="logout-button">Cerrar Sesión</button>
             <button id="checkout-button">Realizar Compra</button>
+            <button id="downloadBtn" disabled>Descargar Factura</button>
         </div>
     </footer>
 
     <script src="login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 </body>
+
 </html>
