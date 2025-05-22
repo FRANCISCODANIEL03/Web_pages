@@ -1,53 +1,78 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const userIdInput = document.getElementById("user-input");
-    const userNameInput = document.getElementById("user-name");
+    const URL = "http://localhost:3001"
+    const passwordInput = document.getElementById('password');
+    const toggleButton = document.getElementById('togglePassword');
+    const icon = document.getElementById('iconPassword');
+
+    // Mostrar/ocultar ícono según si hay texto
+    passwordInput.addEventListener('input', () => {
+        toggleButton.classList.toggle('hidden', passwordInput.value === '');
+    });
+
+    toggleButton.addEventListener('click', () => {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = !isPassword ? 'password' : 'text';
+        icon.className = !isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
+    });
+
     const loginButton = document.getElementById("login");
 
     let clientes = [];
 
+    const notyf = new Notyf({
+        position: {
+            x: 'right',
+            y: 'top'
+        },
+        types: [
+            {
+                type: 'warning',
+                background: 'orange',
+            }
+        ]
+    });
+
     // Validar el login
     loginButton.addEventListener("click", async () => {
-        const userId = parseInt(userIdInput.value);
-        const userName = userNameInput.value.trim();
-        if (!userId || !userName) {
-            Swal.fire({
-                title:"Por favor, completa todos los campos.",
-                icon:"warning"
-            })
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (!email.trim() || !password.trim()) {
+            notyf.open({
+                type: 'warning',
+                message: 'Por favor, completa todos los campos',
+            });
             return;
         }
-        if(userId < 0){
-            Swal.fire({
-                title:"Por favor, ingresa un id valido",
-                icon:"warning"
-            })
-            return;
+
+        const user = {
+            "email": email,
+            "password": password
         }
         try {
             // Obtener los clientes desde la API
-            const response = await fetch(`https://api-tienda-don-pepe.onrender.com/api/v1/clientes/${userId}`);
+            const response = await fetch(`${URL}/api/v1/auth/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            });
             if (!response.ok) throw new Error("Error al obtener los datos de los clientes");
             clientes = await response.json();
+            console.log(clientes);
+
         } catch (error) {
-            console.error("Error:", error.message);
-            Swal.fire({
-                title:"Error al cargar los datos. Inténtalo más tarde.",
-                icon:"error"
-            })
+            notyf.error('Credenciales incorrectas. Intenta nuevamente.')
             return;
         }
-
-
-        // Buscar el cliente en la lista
-        if(userId == 1 && userName == "admin"){
-            Swal.fire({
-                title:"Inicio de administrador exitoso.",
-                icon:"success"
-            })
-
+        //Buscar el cliente en la lista
+        if (email == "admin@gmail.com" && password == "admin123") {
+            notyf.success('Inicio de administrador exitoso.')
             // Almacenar los datos del usuario en localStorage
-            localStorage.setItem("clienteId", 0);
-            localStorage.setItem("clienteNombre", "admin");
+            localStorage.setItem("clienteId", clientes.id);
+            localStorage.setItem("clienteNombre", clientes.nombre);
+            localStorage.setItem("token", clientes.token);
 
             // Redirigir o realizar alguna acción
             setTimeout(() => {
@@ -55,25 +80,20 @@ document.addEventListener("DOMContentLoaded", async () => {
             }, 1000);
             return;
         }
+
         if (clientes) {
-            Swal.fire({
-                title:"Inicio de sesión exitoso.",
-                icon:"success"
-            })
+            notyf.success('Inicio de sesión exitoso.')
 
             // Almacenar los datos del usuario en localStorage
-            localStorage.setItem("clienteId", clientes.id_cliente);
-            localStorage.setItem("clienteNombre", clientes.nombre_cliente);
+            localStorage.setItem("clienteId", clientes.id);
+            localStorage.setItem("clienteNombre", clientes.nombre);
+            localStorage.setItem("token", clientes.token);
+            console.log(clientes.token);
 
             // Redirigir o realizar alguna acción
             setTimeout(() => {
-                window.location.href = "login.html"; // Cambiar por la URL de tu página principal
+                window.location.href = "login.html";
             }, 1000);
-        } else {
-            Swal.fire({
-                title:"Credenciales incorrectas. Intenta nuevamente.",
-                icon:"error"
-            })
         }
     });
 });
