@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -42,7 +43,7 @@ button {
 
 main {
     flex: 1;
-    display: flex; 
+    display: flex;
     padding: 2rem;
     text-align: center;
 }
@@ -80,15 +81,15 @@ footer {
     align-items: center;
 }
 
-.content{
+.content {
     display: flex;
     gap: 2rem;
     width: 80%;
     flex-wrap: wrap;
 }
 
-.products{
-    flex: 1; 
+.products {
+    flex: 1;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -99,10 +100,10 @@ footer {
     align-items: center;
 }
 
-.store-selection{
-    flex: 1; 
-    min-width: 300px; 
-    max-width: 500px; 
+.store-selection {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -139,7 +140,7 @@ footer {
     border-color: #512dab;
 }
 
-#product-list li::after{
+#product-list li::after {
     content: attr(title);
     position: absolute;
     top: -1.5rem;
@@ -155,7 +156,7 @@ footer {
     pointer-events: none;
 }
 
-#product-list li:hover::after{
+#product-list li:hover::after {
     opacity: 1;
 }
 
@@ -222,7 +223,7 @@ input[type="number"]:hover {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
+    text-align: center;
 }
 
 #pagination-container {
@@ -250,11 +251,44 @@ input[type="number"]:hover {
     background-color: #ddd;
 }
 
+button:hover {
+    background-color: #2c4766;
+}
+
+button:disabled {
+    background-color: #ccc;
+    /* gris claro */
+    color: #666;
+    /* texto gris oscuro */
+    cursor: not-allowed;
+    /* ícono de prohibido */
+    border: 1px solid #999;
+}
+
+.btns {
+    width: 40px;
+    /* Mismo ancho y alto */
+    height: 40px;
+    border-radius: 50%;
+    /* 50% lo hace perfectamente circular */
+    padding: 0;
+    /* Elimina padding interno */
+    margin: 2px;
+}
+
+h1 {
+    margin-right: 25rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 /* Cambiar la disposición en pantallas más pequeñas */
 @media (max-width: 768px) {
     .content {
-        flex-direction: column; /* Pone los divs uno encima del otro */
-        align-items: center; /* Centra los divs */
+        flex-direction: column;
+        /* Pone los divs uno encima del otro */
+        align-items: center;
+        /* Centra los divs */
     }
-    
+
 }
