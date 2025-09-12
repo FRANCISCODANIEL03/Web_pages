@@ -2,5 +2,13 @@
 
 <script>
 document.getElementById("downloadBtn").addEventListener("click", () => {
+    const tokenA = localStorage.getItem("token");
+  fetch("https://api-tienda-don-pepe.onrender.com/api/v1/facturas/generate/2", {
+    method: "GET",
+    headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${tokenA}`
+            }
+  })
 });
 </script>
