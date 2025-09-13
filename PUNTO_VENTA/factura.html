@@ -24,5 +24,8 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
     a.remove(); // Limpia
     window.URL.revokeObjectURL(url); // Libera memoria
   })
+  .catch(err => {
+    console.error("Hubo un error:", err);
+  });
 });
 </script>
