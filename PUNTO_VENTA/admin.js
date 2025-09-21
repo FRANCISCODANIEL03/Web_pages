@@ -4,4 +4,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const logoutButton = document.getElementById("logout-button");
     const Result = document.getElementById("result_list");
     const divRes = document.getElementById("result");
+    const prodButton = document.getElementById("prod");
 });
