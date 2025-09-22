@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const upButton = document.getElementById("update");
     const delButton = document.getElementById("delete");
     const opButton = document.getElementById("btn_op");
+    const opFac = document.getElementById("btn_fac");
 });
