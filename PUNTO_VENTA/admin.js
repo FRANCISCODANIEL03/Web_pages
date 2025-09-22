@@ -13,4 +13,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const delButton = document.getElementById("delete");
     const opButton = document.getElementById("btn_op");
     const opFac = document.getElementById("btn_fac");
+    const nameL = document.getElementById("name");
 });
