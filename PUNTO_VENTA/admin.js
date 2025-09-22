@@ -10,4 +10,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const searchButton = document.getElementById("search");
     const insButton = document.getElementById("insert");
     const upButton = document.getElementById("update");
+    const delButton = document.getElementById("delete");
 });
