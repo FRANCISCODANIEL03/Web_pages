@@ -9,4 +9,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const clientButton = document.getElementById("cliente");
     const searchButton = document.getElementById("search");
     const insButton = document.getElementById("insert");
+    const upButton = document.getElementById("update");
 });
