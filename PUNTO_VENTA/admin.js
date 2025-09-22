@@ -5,4 +5,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const Result = document.getElementById("result_list");
     const divRes = document.getElementById("result");
     const prodButton = document.getElementById("prod");
+    const buyButton = document.getElementById("buy");
 });
