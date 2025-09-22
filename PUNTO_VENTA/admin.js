@@ -14,4 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const opButton = document.getElementById("btn_op");
     const opFac = document.getElementById("btn_fac");
     const nameL = document.getElementById("name");
+    const divId = document.getElementById("did");
+
+
 });
