@@ -8,4 +8,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const buyButton = document.getElementById("buy");
     const clientButton = document.getElementById("cliente");
     const searchButton = document.getElementById("search");
+    const insButton = document.getElementById("insert");
 });
