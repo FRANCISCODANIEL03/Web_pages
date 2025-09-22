@@ -7,4 +7,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const prodButton = document.getElementById("prod");
     const buyButton = document.getElementById("buy");
     const clientButton = document.getElementById("cliente");
+    const searchButton = document.getElementById("search");
 });
