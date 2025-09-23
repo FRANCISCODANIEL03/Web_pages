@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divApe2 = document.getElementById("dape2");
     const divEm = document.getElementById("demail");
     const divPass = document.getElementById("dpass");
-
+    const divPassc = document.getElementById("dpassc");
 
 });
