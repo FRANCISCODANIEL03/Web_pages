@@ -24,5 +24,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divPassc = document.getElementById("dpassc");
     const divNomP = document.getElementById("dnombrep");
     const divDes = document.getElementById("ddescrip");
+    const divCat = document.getElementById("dcat");
 
 });
