@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const nameL = document.getElementById("name");
     const divId = document.getElementById("did");
     const divIdP = document.getElementById("didp");
+    const divNom = document.getElementById("dnombre");
 
 });
