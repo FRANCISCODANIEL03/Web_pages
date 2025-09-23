@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divPass = document.getElementById("dpass");
     const divPassc = document.getElementById("dpassc");
     const divNomP = document.getElementById("dnombrep");
-
+    const divDes = document.getElementById("ddescrip");
 
 });
