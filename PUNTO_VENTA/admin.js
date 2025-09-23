@@ -19,5 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divNom = document.getElementById("dnombre");
     const divApe1 = document.getElementById("dape1");
     const divApe2 = document.getElementById("dape2");
+    const divEm = document.getElementById("demail");
 
 });
