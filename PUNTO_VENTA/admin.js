@@ -22,5 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divEm = document.getElementById("demail");
     const divPass = document.getElementById("dpass");
     const divPassc = document.getElementById("dpassc");
+    const divNomP = document.getElementById("dnombrep");
+
 
 });
