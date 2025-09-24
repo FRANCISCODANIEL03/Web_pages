@@ -65,5 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         icon2.className = !isPassword ? "bi bi-eye-slash" : "bi bi-eye";
     });
 
+    IdP.addEventListener("change", async () => {
+    });
 
 });
