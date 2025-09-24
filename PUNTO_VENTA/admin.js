@@ -80,7 +80,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (!response.ok) throw new Error("Producto no encontrado");
             const producto = await response.json();
 
-           
+            // Llenar los campos con los datos del producto
+            NomP1.value = producto.nombre_producto;
         } 
     });
 
