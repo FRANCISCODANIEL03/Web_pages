@@ -49,5 +49,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         toggleButton.classList.toggle("hidden", passwordInput.value === "");
     });
 
+    toggleButton.addEventListener("click", () => {
+        const isPassword = passwordInput.type === "password";
+        passwordInput.type = !isPassword ? "password" : "text";
+        icon.className = !isPassword ? "bi bi-eye-slash" : "bi bi-eye";
+    });
+
 
 });
