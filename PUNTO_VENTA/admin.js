@@ -55,5 +55,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         icon.className = !isPassword ? "bi bi-eye-slash" : "bi bi-eye";
     });
 
+    confirmPasswordInput.addEventListener("input", () => {
+        toggleButton2.classList.toggle("hidden", confirmPasswordInput.value === "");
+    });
 
 });
