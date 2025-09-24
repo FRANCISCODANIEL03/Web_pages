@@ -69,6 +69,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         const ID2 = IdP.value.trim();
         if (!ID2) return;
 
+        try {
+            const response = await fetch(`${URL}productos/${ID2}`, {
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${tokenA}`,
+                },
+            });
+
+        } 
     });
 
 });
