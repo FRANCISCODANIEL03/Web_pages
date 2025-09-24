@@ -26,6 +26,28 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divDes = document.getElementById("ddescrip");
     const divCat = document.getElementById("dcat");
     const divPrecio = document.getElementById("dprecio");
+    const divStock = document.getElementById("dstock");
+    const oper = document.getElementById("opera");
+    const URL = "http://localhost:3001/api/v1/";
+    const IdP = document.getElementById("idp");
+    const NomP1 = document.getElementById("nombrep");
+    const Des2 = document.getElementById("descrip");
+    const Precio1 = document.getElementById("precio");
+    const Stock1 = document.getElementById("stock");
+    const categoria2 = document.getElementById("category");
+    const message1 = document.getElementById("msg")
+    const message2 = document.getElementById("msg2")
+
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirm-pass");
+    const toggleButton = document.getElementById("togglePassword");
+    const toggleButton2 = document.getElementById("togglePassword2");
+    const icon = document.getElementById("iconPassword");
+    const icon2 = document.getElementById("iconPassword2");
+
+    passwordInput.addEventListener("input", () => {
+        toggleButton.classList.toggle("hidden", passwordInput.value === "");
+    });
 
 
 });
