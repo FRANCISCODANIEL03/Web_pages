@@ -25,5 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const divNomP = document.getElementById("dnombrep");
     const divDes = document.getElementById("ddescrip");
     const divCat = document.getElementById("dcat");
+    const divPrecio = document.getElementById("dprecio");
+
 
 });
