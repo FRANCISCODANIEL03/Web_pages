@@ -66,6 +66,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     IdP.addEventListener("change", async () => {
+        const ID2 = IdP.value.trim();
+        if (!ID2) return;
+
     });
 
 });
