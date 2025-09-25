@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Llenar los campos con los datos del producto
             NomP1.value = producto.nombre_producto;
             Des2.value = producto.descripcion || "";
+            Precio1.value = producto.precio;
         } 
     });
 
