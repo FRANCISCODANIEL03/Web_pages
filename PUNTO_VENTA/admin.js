@@ -89,6 +89,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             notyf.success("Producto cargado correctamente");
         } catch (error) {
+            notyf.error("Producto no registrado en la Base de Datos");
+
             
         }
     });
