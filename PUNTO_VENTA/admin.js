@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             NomP1.value = producto.nombre_producto;
             Des2.value = producto.descripcion || "";
             Precio1.value = producto.precio;
-            Stock1.value = producto.stock
+            Stock1.value = producto.stock;
             categoria2.value = producto.categoria || ""; // Asegúrate que el select tenga la opción correcta
 
             notyf.success("Producto cargado correctamente");
@@ -95,5 +95,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             vaciar();
         }
     });
+
+    let cont = 0;
+
 
 });
