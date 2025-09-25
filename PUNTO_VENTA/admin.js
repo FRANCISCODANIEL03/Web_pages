@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             Stock1.value = producto.stock
             categoria2.value = producto.categoria || ""; // Asegúrate que el select tenga la opción correcta
 
-            
+            notyf.success("Producto cargado correctamente");
         } 
     });
 
