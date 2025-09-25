@@ -91,7 +91,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         } catch (error) {
             notyf.error("Producto no registrado en la Base de Datos");
 
-            
+            // Limpiar los campos si no se encuentra
+            vaciar();
         }
     });
 
