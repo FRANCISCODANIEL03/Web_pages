@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             Des2.value = producto.descripcion || "";
             Precio1.value = producto.precio;
             Stock1.value = producto.stock
+            categoria2.value = producto.categoria || ""; // Asegúrate que el select tenga la opción correcta
+
+            
         } 
     });
 
