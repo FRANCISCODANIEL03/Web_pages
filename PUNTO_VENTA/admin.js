@@ -88,7 +88,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             categoria2.value = producto.categoria || ""; // Asegúrate que el select tenga la opción correcta
 
             notyf.success("Producto cargado correctamente");
-        } 
+        } catch (error) {
+            
+        }
     });
 
 });
