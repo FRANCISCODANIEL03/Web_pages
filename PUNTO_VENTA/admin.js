@@ -99,6 +99,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     let cont = 0;
     let rec = "";
     let op = "";
-
+    let producto = [];
 
 });
