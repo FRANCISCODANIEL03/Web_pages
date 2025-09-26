@@ -100,5 +100,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let rec = "";
     let op = "";
     let producto = [];
+    let compra = [];
+
 
 });
