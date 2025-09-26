@@ -102,5 +102,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     let producto = [];
     let compra = [];
 
+    const notyf = new Notyf({
+        position: {
+            x: "right",
+            y: "top",
+        },
+        types: [
+            {
+                type: "warning",
+                background: "orange",
+            },
+        ],
+    });
 
 });
