@@ -161,6 +161,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     clientButton.addEventListener("click", () => {
         nameL.textContent = "USUARIOS";
+        [searchButton, insButton].forEach((button) => {
+            button.style.display = "block"; // Mostrar en el DOM
+            button.classList.remove("animated-hidden");
+            button.classList.add("animated-visible");
+        });
     });
 
 });
