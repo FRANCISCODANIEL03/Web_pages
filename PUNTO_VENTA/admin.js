@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         cont = 1;
         vaciar()
         hiddenI()
+        divRes.style.display = "none"
     });
 
 });
