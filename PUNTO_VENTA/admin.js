@@ -176,6 +176,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }, 300); // Igual al tiempo del CSS (0.3s)
         });
 
+        cont = 4;
     });
 
 });
