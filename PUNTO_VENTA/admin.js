@@ -166,6 +166,16 @@ document.addEventListener("DOMContentLoaded", async () => {
             button.classList.remove("animated-hidden");
             button.classList.add("animated-visible");
         });
+        [upButton, delButton].forEach((button) => {
+            button.classList.remove("animated-visible");
+            button.classList.add("animated-hidden");
+
+            // Esperar a que termine la animación antes de ocultar completamente
+            setTimeout(() => {
+                button.style.display = "none";
+            }, 300); // Igual al tiempo del CSS (0.3s)
+        });
+
     });
 
 });
