@@ -133,4 +133,33 @@ document.addEventListener("DOMContentLoaded", async () => {
         message2.style.display = "block";
     });
 
+    buyButton.addEventListener("click", () => {
+        nameL.textContent = "COMPRAS";
+        [searchButton, delButton].forEach((button) => {
+            button.style.display = "block"; // Mostrar en el DOM
+            button.classList.remove("animated-hidden");
+            button.classList.add("animated-visible");
+        });
+        [insButton, upButton].forEach((button) => {
+            button.classList.remove("animated-visible");
+            button.classList.add("animated-hidden");
+
+            // Esperar a que termine la animación antes de ocultar completamente
+            setTimeout(() => {
+                button.style.display = "none";
+            }, 300); // Igual al tiempo del CSS (0.3s)
+        });
+
+        cont = 3;
+        vaciar()
+        hiddenI();
+        divRes.style.display = "none";
+        opButton.style.display = "none";
+        message1.style.display = "none";
+        message2.style.display = "block";
+    });
+
+    clientButton.addEventListener("click", () => {
+    });
+
 });
