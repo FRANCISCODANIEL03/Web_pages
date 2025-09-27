@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     clientButton.addEventListener("click", () => {
+        nameL.textContent = "USUARIOS";
     });
 
 });
