@@ -180,6 +180,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         vaciar()
         hiddenI();
         divRes.style.display = "none";
+        opButton.style.display = "none";
     });
 
 });
