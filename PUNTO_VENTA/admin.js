@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     insButton.addEventListener("click", () => {
+        hiddenI();
     });
 
 });
