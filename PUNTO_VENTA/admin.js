@@ -215,6 +215,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         hiddenI();
         oper.textContent = "INSERTAR";
         oper.style.display = "block";
+        op = "insert";
     });
 
 });
