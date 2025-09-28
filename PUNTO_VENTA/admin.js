@@ -214,6 +214,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     insButton.addEventListener("click", () => {
         hiddenI();
         oper.textContent = "INSERTAR";
+        oper.style.display = "block";
     });
 
 });
