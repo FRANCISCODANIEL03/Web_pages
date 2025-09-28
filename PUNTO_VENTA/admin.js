@@ -181,6 +181,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         hiddenI();
         divRes.style.display = "none";
         opButton.style.display = "none";
+        message1.style.display = "none";
     });
 
 });
