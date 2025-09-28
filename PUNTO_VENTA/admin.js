@@ -185,4 +185,33 @@ document.addEventListener("DOMContentLoaded", async () => {
         message2.style.display = "block";
     });
 
+    searchButton.addEventListener("click", () => {
+        hiddenI();
+        oper.textContent = "BUSCAR";
+        oper.style.display = "block";
+        op = "search";
+        switch (cont) {
+            case 1:
+                rec = "product";
+                divId.style.display = "block";
+                break;
+            case 3:
+                rec = "buy";
+                divId.style.display = "block";
+                break;
+            case 4:
+                rec = "client";
+                divEm.style.display = "block"
+                divPass.style.display = "block"
+                break;
+        }
+        opButton.style.display = "block";
+        divRes.style.display = "none";
+        vaciar();
+        message2.style.display = "none";
+    });
+
+    insButton.addEventListener("click", () => {
+    });
+
 });
