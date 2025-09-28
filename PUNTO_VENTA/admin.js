@@ -182,6 +182,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divRes.style.display = "none";
         opButton.style.display = "none";
         message1.style.display = "none";
+        message2.style.display = "block";
     });
 
 });
