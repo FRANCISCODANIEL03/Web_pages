@@ -242,6 +242,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     upButton.addEventListener("click", () => {
+        hiddenI();
     });
 
 });
