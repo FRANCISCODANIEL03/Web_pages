@@ -216,6 +216,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         oper.textContent = "INSERTAR";
         oper.style.display = "block";
         op = "insert";
+        switch (cont) {
+            case 1:
+                divNomP.style.display = "block";
+                divDes.style.display = "block";
+                divCat.style.display = "block";
+                divPrecio.style.display = "block";
+                divStock.style.display = "block";
+                rec = "product";
+                break;
+        }
     });
 
 });
