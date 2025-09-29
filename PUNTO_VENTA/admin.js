@@ -241,4 +241,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         message2.style.display = "none";
     });
 
+    upButton.addEventListener("click", () => {
+    });
+
 });
