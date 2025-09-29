@@ -244,6 +244,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     upButton.addEventListener("click", () => {
         hiddenI();
         oper.textContent = "ACTUALIZAR";
+        oper.style.display = "block";
     });
 
 });
