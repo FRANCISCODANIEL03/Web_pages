@@ -274,4 +274,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         message2.style.display = "none";
     });
 
+    delButton.addEventListener("click", () => {
+    });
+
+
 });
