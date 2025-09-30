@@ -275,6 +275,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     delButton.addEventListener("click", () => {
+        hiddenI();
     });
 
 
