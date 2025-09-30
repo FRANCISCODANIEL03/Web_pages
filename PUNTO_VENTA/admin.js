@@ -247,6 +247,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         oper.style.display = "block";
         op = "update";
         divId.style.display = "block";
+        switch (cont) {
+            case 1:
+                divId.style.display = "none";
+                divIdP.style.display = "block";
+                divNomP.style.display = "block";
+                divDes.style.display = "block";
+                divCat.style.display = "block";
+                divPrecio.style.display = "block";
+                divStock.style.display = "block";
+                rec = "product";
+                break;
+        }
     });
 
 });
