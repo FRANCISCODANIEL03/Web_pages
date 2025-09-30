@@ -245,6 +245,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         hiddenI();
         oper.textContent = "ACTUALIZAR";
         oper.style.display = "block";
+        op = "update";
     });
 
 });
