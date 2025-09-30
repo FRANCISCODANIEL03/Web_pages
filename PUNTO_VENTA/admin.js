@@ -258,6 +258,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 divStock.style.display = "block";
                 rec = "product";
                 break;
+            case 4:
+                divNom.style.display = "block";
+                divApe1.style.display = "block";
+                divApe2.style.display = "block";
+                divEm.style.display = "block";
+                divPass.style.display = "block";
+                divPassc.style.display = "block";
+                rec = "client";
+                break;
         }
     });
 
