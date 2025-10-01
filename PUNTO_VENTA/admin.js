@@ -279,6 +279,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         oper.textContent = "ELIMINAR";
         oper.style.display = "block";
         op = "delete";
+        divId.style.display = "block";
     });
 
 
