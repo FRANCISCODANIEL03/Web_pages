@@ -280,6 +280,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         oper.style.display = "block";
         op = "delete";
         divId.style.display = "block";
+        switch (cont) {
+            case 1:
+                rec = "product";
+                break;
+            case 3:
+                rec = "buy";
+                break;
+            case 4:
+                rec = "client";
+                break;
+        }
     });
 
 
