@@ -293,6 +293,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         opButton.style.display = "block";
         divRes.style.display = "none";
+        vaciar();
     });
 
 
