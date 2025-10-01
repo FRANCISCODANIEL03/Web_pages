@@ -291,6 +291,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 rec = "client";
                 break;
         }
+        opButton.style.display = "block";
     });
 
 
