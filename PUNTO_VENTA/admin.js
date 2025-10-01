@@ -297,5 +297,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         message2.style.display = "none";
     });
 
+    const tokenA = localStorage.getItem("token");
 
 });
