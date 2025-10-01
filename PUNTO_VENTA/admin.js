@@ -276,6 +276,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     delButton.addEventListener("click", () => {
         hiddenI();
+        oper.textContent = "ELIMINAR";
     });
 
 
