@@ -300,6 +300,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const tokenA = localStorage.getItem("token");
     const vaciar = () => {
         document.getElementById("id").value = "";
+        document.getElementById("idp").value = "";
     };
 
 });
