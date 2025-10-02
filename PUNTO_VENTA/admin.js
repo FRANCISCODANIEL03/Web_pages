@@ -304,6 +304,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("nombre").value = "";
         document.getElementById("ape1").value = "";
         document.getElementById("ape2").value = "";
+        document.getElementById("nombrep").value = "";
     };
 
 });
