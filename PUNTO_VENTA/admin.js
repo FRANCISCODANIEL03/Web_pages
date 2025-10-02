@@ -301,6 +301,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const vaciar = () => {
         document.getElementById("id").value = "";
         document.getElementById("idp").value = "";
+        document.getElementById("nombre").value = "";
     };
 
 });
