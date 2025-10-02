@@ -298,5 +298,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     const tokenA = localStorage.getItem("token");
+    const vaciar = () => {
+    };
 
 });
