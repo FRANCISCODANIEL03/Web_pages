@@ -307,6 +307,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("nombrep").value = "";
         document.getElementById("descrip").value = "";
         document.getElementById("precio").value = "";
+        document.getElementById("stock").value = "";
     };
 
 });
