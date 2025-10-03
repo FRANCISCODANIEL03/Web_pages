@@ -313,5 +313,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("password").value == "";
         document.getElementById("confirm-pass").value == "";
     };
+    opButton.addEventListener("click", async () => {
+
 
 });
