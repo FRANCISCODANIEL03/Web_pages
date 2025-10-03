@@ -318,5 +318,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Nom = document.getElementById("nombre").value;
         const Ape1 = document.getElementById("ape1").value;
         var Ape2 = document.getElementById("ape2").value;
+        const NomP = document.getElementById("nombrep").value;
+
 
 });
