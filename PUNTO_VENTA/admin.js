@@ -316,5 +316,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     opButton.addEventListener("click", async () => {
         const Id = document.getElementById("id").value;
         const Nom = document.getElementById("nombre").value;
+        const Ape1 = document.getElementById("ape1").value;
+
 
 });
