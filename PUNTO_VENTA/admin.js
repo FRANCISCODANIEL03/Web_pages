@@ -311,6 +311,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("category").selectedIndex = 0;
         document.getElementById("email").value == "";
         document.getElementById("password").value == "";
+        document.getElementById("confirm-pass").value == "";
     };
 
 });
