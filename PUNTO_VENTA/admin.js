@@ -310,6 +310,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("stock").value = "";
         document.getElementById("category").selectedIndex = 0;
         document.getElementById("email").value == "";
+        document.getElementById("password").value == "";
     };
 
 });
