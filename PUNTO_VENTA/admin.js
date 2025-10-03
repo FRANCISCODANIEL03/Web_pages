@@ -308,6 +308,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("descrip").value = "";
         document.getElementById("precio").value = "";
         document.getElementById("stock").value = "";
+        document.getElementById("category").selectedIndex = 0;
     };
 
 });
