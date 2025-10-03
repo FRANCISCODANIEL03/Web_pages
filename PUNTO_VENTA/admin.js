@@ -315,5 +315,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
     opButton.addEventListener("click", async () => {
         const Id = document.getElementById("id").value;
+        const Nom = document.getElementById("nombre").value;
 
 });
