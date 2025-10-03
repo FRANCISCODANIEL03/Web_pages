@@ -314,6 +314,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("confirm-pass").value == "";
     };
     opButton.addEventListener("click", async () => {
-
+        const Id = document.getElementById("id").value;
 
 });
