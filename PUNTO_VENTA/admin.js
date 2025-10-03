@@ -309,6 +309,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("precio").value = "";
         document.getElementById("stock").value = "";
         document.getElementById("category").selectedIndex = 0;
+        document.getElementById("email").value == "";
     };
 
 });
