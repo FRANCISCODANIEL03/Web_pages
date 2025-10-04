@@ -323,6 +323,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const categoria = document.getElementById("category").value;
         const Precio1 = document.getElementById("precio");
         const Precio = parseFloat(Precio1.value);
-
+        const Stock1 = document.getElementById("stock");
 
 });
