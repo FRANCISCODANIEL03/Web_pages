@@ -324,5 +324,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Precio1 = document.getElementById("precio");
         const Precio = parseFloat(Precio1.value);
         const Stock1 = document.getElementById("stock");
+        const Stock = parseInt(Stock1.value);
 
 });
