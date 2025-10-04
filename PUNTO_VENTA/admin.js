@@ -322,6 +322,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Des = document.getElementById("descrip").value;
         const categoria = document.getElementById("category").value;
         const Precio1 = document.getElementById("precio");
+        const Precio = parseFloat(Precio1.value);
 
 
 });
