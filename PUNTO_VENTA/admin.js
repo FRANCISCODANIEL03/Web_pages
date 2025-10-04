@@ -328,6 +328,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const ID = parseInt(Id);
         Result.innerHTML = "";
         if (op == "search" && rec == "product") {
+            if (ID < 1 || isNaN(ID)) {
+            }
         }
 
 
