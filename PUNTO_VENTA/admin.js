@@ -320,4 +320,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         var Ape2 = document.getElementById("ape2").value;
         const NomP = document.getElementById("nombrep").value;
         const Des = document.getElementById("descrip").value;
+        const categoria = document.getElementById("category").value;
+
+
 });
