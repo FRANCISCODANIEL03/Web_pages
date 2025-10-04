@@ -327,6 +327,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Stock = parseInt(Stock1.value);
         const ID = parseInt(Id);
         Result.innerHTML = "";
+        if (op == "search" && rec == "product") {
+        }
 
 
 });
