@@ -326,5 +326,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Stock1 = document.getElementById("stock");
         const Stock = parseInt(Stock1.value);
         const ID = parseInt(Id);
+        Result.innerHTML = "";
+
 
 });
