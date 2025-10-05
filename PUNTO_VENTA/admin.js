@@ -335,6 +335,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 return;
             }
+            try {
+                // Obtener productos de la API
+                const response = await fetch(`${URL}productos/${ID}`, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${tokenA}`,
+                    },
+                });
+            } 
         }
 
 
