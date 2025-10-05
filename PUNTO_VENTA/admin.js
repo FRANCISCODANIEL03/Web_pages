@@ -350,6 +350,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 notyf.error("Producto no registrado en la Base de Datos");
                 return;
             }
+            const li = document.createElement("li");
         }
 
 
