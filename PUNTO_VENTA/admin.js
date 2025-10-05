@@ -358,6 +358,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Precio: ${producto.precio}<br>
                             -> Stock: ${producto.stock}<br>`;
             Result.appendChild(li);
+            divRes.style.display = "block";
         }
 
 
