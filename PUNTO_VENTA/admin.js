@@ -346,7 +346,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 if (!response.ok)
                     throw new Error("Error al obtener los datos de la API");
                 producto = await response.json();
-            } 
+            } catch (error) {
+                notyf.error("Producto no registrado en la Base de Datos");
+                return;
+            }
         }
 
 
