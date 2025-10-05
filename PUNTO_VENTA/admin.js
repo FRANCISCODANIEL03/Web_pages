@@ -329,6 +329,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         Result.innerHTML = "";
         if (op == "search" && rec == "product") {
             if (ID < 1 || isNaN(ID)) {
+                notyf.open({
+                    type: "warning",
+                    message: "Por favor, ingresa un id valido",
+                });
+                return;
             }
         }
 
