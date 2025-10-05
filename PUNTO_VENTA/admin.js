@@ -360,6 +360,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             Result.appendChild(li);
             divRes.style.display = "block";
         } else if (op == "search" && rec == "buy") {
+            if (ID < 1 || isNaN(ID)) {
+                notyf.open({
+                    type: "warning",
+                    message: "Por favor, ingresa un id valido",
+                });
+                return;
+            }
         } 
        
 
