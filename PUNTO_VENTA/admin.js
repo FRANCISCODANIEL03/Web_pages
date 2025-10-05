@@ -351,6 +351,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
             const li = document.createElement("li");
+            li.innerHTML = `Id: ${producto.id_producto}<br> 
+                            -> Nombre: ${producto.nombre_producto}<br>  
+                            -> Descripcion: ${producto.descripcion || "Sin descripcion"}<br>
+                            -> Categoria: ${producto.categoria}<br>
+                            -> Precio: ${producto.precio}<br>
+                            -> Stock: ${producto.stock}<br>`;
         }
 
 
