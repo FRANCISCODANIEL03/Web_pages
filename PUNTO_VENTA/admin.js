@@ -357,6 +357,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Categoria: ${producto.categoria}<br>
                             -> Precio: ${producto.precio}<br>
                             -> Stock: ${producto.stock}<br>`;
+            Result.appendChild(li);
         }
 
 
