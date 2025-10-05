@@ -359,7 +359,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Stock: ${producto.stock}<br>`;
             Result.appendChild(li);
             divRes.style.display = "block";
-        }
+        } else if (op == "search" && rec == "buy") {
+        } 
+       
 
 
 });
