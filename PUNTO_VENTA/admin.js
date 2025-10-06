@@ -386,6 +386,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             // Crear elementos para mostrar la información
             const liCompra = document.createElement("li");
+            liCompra.innerHTML = `
+                <strong>Id de la compra:</strong> ${compra.id_compra}<br>
+                <strong>Fecha de compra:</strong> ${new Date(
+                compra.fecha_compra
+            ).toLocaleDateString()}<br>
+                <strong>Tienda:</strong> ${compra.tienda_.nombre_tienda}<br>
+            `;
         } 
        
 
