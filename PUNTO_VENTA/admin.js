@@ -384,6 +384,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
 
+            // Crear elementos para mostrar la información
+            const liCompra = document.createElement("li");
         } 
        
 
