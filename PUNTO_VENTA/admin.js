@@ -401,6 +401,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <strong>Cliente:</strong> ${compra.cliente_.nombre_cliente} ${compra.cliente_.apellido1
                 } ${compra.cliente_.apellido2 || "---"}
             `;
+            Result.appendChild(liCliente);
+
         } 
        
 
