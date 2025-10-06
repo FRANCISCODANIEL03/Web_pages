@@ -393,6 +393,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             ).toLocaleDateString()}<br>
                 <strong>Tienda:</strong> ${compra.tienda_.nombre_tienda}<br>
             `;
+            Result.appendChild(liCompra);
+
         } 
        
 
