@@ -395,6 +395,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             `;
             Result.appendChild(liCompra);
 
+            // Información del cliente
+            const liCliente = document.createElement("li");
         } 
        
 
