@@ -367,6 +367,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 return;
             }
+            try {
+                // Obtener compra de la API
+                const response = await fetch(`${URL}compras/${ID}`, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${tokenA}`,
+                    },
+                });
+            } 
         } 
        
 
