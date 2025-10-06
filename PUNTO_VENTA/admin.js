@@ -397,6 +397,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             // Información del cliente
             const liCliente = document.createElement("li");
+            liCliente.innerHTML = `
+                <strong>Cliente:</strong> ${compra.cliente_.nombre_cliente} ${compra.cliente_.apellido1
+                } ${compra.cliente_.apellido2 || "---"}
+            `;
         } 
        
 
