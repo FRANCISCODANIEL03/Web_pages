@@ -378,7 +378,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 if (!response.ok)
                     throw new Error("Error al obtener los datos de la API");
                 compra = await response.json();
-            } 
+            } catch (error) {
+                console.log(error);
+                notyf.error("Compra no registrada en la Base de Datos");
+                return;
+            }
+
         } 
        
 
