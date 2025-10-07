@@ -455,6 +455,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
 
                 data = await response.json();
+                notyf.success(
+                    `Producto registrado exitosamente con el ID: ${data.id_producto}`
+                );
             } 
         } 
        
