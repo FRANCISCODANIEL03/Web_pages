@@ -432,6 +432,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 return;
             }
+            const nuevoProd = {
+                nombre_producto: NomP,
+                descripcion: Des,
+                precio: Precio,
+                stock: Stock,
+                categoria: categoria,
+            };
         } 
        
 
