@@ -458,6 +458,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 notyf.success(
                     `Producto registrado exitosamente con el ID: ${data.id_producto}`
                 );
+                vaciar();
             } 
         } 
        
