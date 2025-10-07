@@ -454,6 +454,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     return;
                 }
 
+                data = await response.json();
             } 
         } 
        
