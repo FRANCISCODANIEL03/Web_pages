@@ -424,6 +424,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Mostrar el contenedor de resultados
             divRes.style.display = "block";
             opFac.style.display = "block";
+        } else if (op == "insert" && rec == "product") {
+            
         } 
        
 
