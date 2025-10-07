@@ -439,6 +439,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                 stock: Stock,
                 categoria: categoria,
             };
+            try {
+                const response = await fetch(`${URL}productos`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${tokenA}`,
+                    },
+                    body: JSON.stringify(nuevoProd),
+                });
+            } 
         } 
        
 
