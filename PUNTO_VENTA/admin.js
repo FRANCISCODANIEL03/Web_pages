@@ -425,7 +425,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             divRes.style.display = "block";
             opFac.style.display = "block";
         } else if (op == "insert" && rec == "product") {
-            
+            if (!NomP.trim() || !Des.trim() || !Precio1.value.trim() || !Stock1.value.trim()) {
+                notyf.open({
+                    type: 'warning',
+                    message: 'Por favor, completa todos los campos',
+                });
+                return;
+            }
         } 
        
 
