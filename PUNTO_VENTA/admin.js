@@ -421,6 +421,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 Result.appendChild(liDetalle);
             });
 
+            // Mostrar el contenedor de resultados
+            divRes.style.display = "block";
+            opFac.style.display = "block";
         } 
        
 
