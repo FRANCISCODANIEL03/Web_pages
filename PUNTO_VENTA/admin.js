@@ -448,6 +448,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     body: JSON.stringify(nuevoProd),
                 });
+
+                if (!response.ok) {
+                    notyf.error("Producto ya registrado en la Base de Datos");
+                    return;
+                }
+
             } 
         } 
        
