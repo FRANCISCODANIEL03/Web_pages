@@ -403,6 +403,24 @@ document.addEventListener("DOMContentLoaded", async () => {
             `;
             Result.appendChild(liCliente);
 
+            // Detalles de la compra
+            compra.detalles_.forEach((detalle, index) => {
+                const liDetalle = document.createElement("li");
+                liDetalle.innerHTML = `
+                    <strong>Producto ${index + 1}:</strong><br>
+                    - Nombre del producto: ${detalle.producto.nombre_producto
+                    }<br>
+                    - Descripción: ${detalle.producto.descripcion || "Sin descripción"
+                    }<br>
+                    - Precio unitario: $${detalle.producto.precio.toFixed(
+                        2
+                    )}<br>
+                    - Cantidad comprada: ${detalle.cantidad_productos}<br>
+                    - Total: $${detalle.total.toFixed(2)}<br>
+                `;
+                Result.appendChild(liDetalle);
+            });
+
         } 
        
 
