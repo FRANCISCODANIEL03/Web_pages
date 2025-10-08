@@ -459,7 +459,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                     `Producto registrado exitosamente con el ID: ${data.id_producto}`
                 );
                 vaciar();
-            } 
+            } catch (error) {
+                console.error(error);
+                notyf.error("Hubo un problema al registrar el producto.");
+                return;
+            }
         } 
        
 
