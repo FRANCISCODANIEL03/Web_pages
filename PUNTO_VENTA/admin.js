@@ -465,6 +465,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
         } else if (op == "insert" && rec == "client") {
+            const email = document.getElementById("email").value;
         } 
        
 
