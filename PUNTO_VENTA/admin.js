@@ -490,6 +490,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 Ape2 = null;
             }
 
+            var data = null;
+
         } 
        
 
