@@ -468,6 +468,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             const confirmPassword = document.getElementById("confirm-pass").value;
+            if (
+                !Nom.trim() ||
+                !Ape1.trim() ||
+                !email.trim() ||
+                !password.trim() ||
+                !confirmPassword.trim()
+            ) 
         } 
        
 
