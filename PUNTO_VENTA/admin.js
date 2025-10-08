@@ -474,7 +474,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 !email.trim() ||
                 !password.trim() ||
                 !confirmPassword.trim()
-            ) 
+            ) {
+                notyf.open({
+                    type: "warning",
+                    message: "Por favor, completa todos los campos",
+                });
+                return;
+            }
         } 
        
 
