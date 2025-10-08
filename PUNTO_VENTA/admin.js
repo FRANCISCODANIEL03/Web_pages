@@ -464,6 +464,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 notyf.error("Hubo un problema al registrar el producto.");
                 return;
             }
+        } else if (op == "insert" && rec == "client") {
         } 
        
 
