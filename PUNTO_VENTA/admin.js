@@ -499,6 +499,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 password: password,
                 email: email,
             };
+            try {
+                const response = await fetch(`${URL}auth/register`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(nuevoUsuario),
+                });
+            } 
         } 
        
 
