@@ -514,7 +514,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
                 notyf.success("Usuario registrado exitosamente");
                 vaciar()
-            } 
+            } catch (error) {
+                console.error(error);
+                for (const err of data.message) {
+                    notyf.error(err);
+                }
+            }
         } 
        
 
