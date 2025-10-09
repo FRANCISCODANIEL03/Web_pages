@@ -507,6 +507,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     body: JSON.stringify(nuevoUsuario),
                 });
+                data = await response.json();
             } 
         } 
        
