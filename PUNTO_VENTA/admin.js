@@ -521,6 +521,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
             }
         } else if (op == "search" && rec == "client") {
+            const email = document.getElementById("email").value;
         }
        
 
