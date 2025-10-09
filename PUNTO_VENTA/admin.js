@@ -492,6 +492,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             var data = null;
 
+            const nuevoUsuario = {
+                nombre: Nom,
+                apellido1: Ape1,
+                apellido2: Ape2,
+                password: password,
+                email: email,
+            };
         } 
        
 
