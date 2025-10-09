@@ -520,7 +520,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     notyf.error(err);
                 }
             }
-        } 
+        } else if (op == "search" && rec == "client") {
+        }
        
 
 
