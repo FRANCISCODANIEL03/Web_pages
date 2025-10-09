@@ -513,6 +513,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     throw new Error("Error al registrar el usuario");
                 }
                 notyf.success("Usuario registrado exitosamente");
+                vaciar()
             } 
         } 
        
