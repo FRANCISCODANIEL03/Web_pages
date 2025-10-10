@@ -547,6 +547,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 if (!response.ok) throw new Error("Error al obtener los datos de los clientes");
                 clientes = await response.json();
                 const li = document.createElement("li");
+                li.innerHTML = `Id: ${clientes.id}<br> 
+                            -> Nombre: ${clientes.nombre}<br>  
+                            -> Apellido1: ${clientes.apellido1}<br>
+                            -> Apellido2: ${clientes.apellido2 || "---"}<br>
+                            -> Email: ${clientes.email}<br>
+                            -> Role: ${clientes.role}<br>`;
             } 
         }
        
