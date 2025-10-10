@@ -545,6 +545,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     body: JSON.stringify(user)
                 });
                 if (!response.ok) throw new Error("Error al obtener los datos de los clientes");
+                clientes = await response.json();
             } 
         }
        
