@@ -523,6 +523,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else if (op == "search" && rec == "client") {
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
+            if (!email.trim() || !password.trim()) {
+                notyf.open({
+                    type: 'warning',
+                    message: 'Por favor, completa todos los campos',
+                });
+                return;
+            }
+
         }
        
 
