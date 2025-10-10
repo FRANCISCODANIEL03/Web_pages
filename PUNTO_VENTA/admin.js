@@ -546,6 +546,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 if (!response.ok) throw new Error("Error al obtener los datos de los clientes");
                 clientes = await response.json();
+                const li = document.createElement("li");
             } 
         }
        
