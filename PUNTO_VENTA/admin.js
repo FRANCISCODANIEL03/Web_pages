@@ -554,6 +554,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Email: ${clientes.email}<br>
                             -> Role: ${clientes.role}<br>`;
                 Result.appendChild(li);
+                divRes.style.display = "block";
             } 
         }
        
