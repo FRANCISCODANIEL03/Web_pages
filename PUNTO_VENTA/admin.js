@@ -535,6 +535,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                 "email": email,
                 "password": password
             }
+            try {
+                // Obtener los clientes desde la API
+                const response = await fetch(`${URL}auth/login`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(user)
+                });
+            } 
         }
        
 
