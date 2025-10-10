@@ -531,6 +531,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
 
+            const user = {
+                "email": email,
+                "password": password
+            }
         }
        
 
