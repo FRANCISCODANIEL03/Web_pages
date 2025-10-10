@@ -553,6 +553,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Apellido2: ${clientes.apellido2 || "---"}<br>
                             -> Email: ${clientes.email}<br>
                             -> Role: ${clientes.role}<br>`;
+                Result.appendChild(li);
             } 
         }
        
