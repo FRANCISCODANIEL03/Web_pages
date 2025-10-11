@@ -561,7 +561,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
         }
-       
+        else if (op == "update" && rec == "product") {
+        }
 
 
 });
