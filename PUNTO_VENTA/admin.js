@@ -570,6 +570,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
             const idp = parseInt(IdP.value);
+            const updateProd = {
+                nombre_producto: NomP,
+                descripcion: Des,
+                precio: Precio,
+                stock: Stock,
+                categoria: categoria,
+            };
         }
 
 
