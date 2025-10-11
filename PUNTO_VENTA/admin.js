@@ -587,6 +587,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     body: JSON.stringify(updateProd),
                 });
                 data = await response.json();
+                notyf.success(`Producto actualizado exitosamente con el ID: ${idp}`);
             } 
         }
 
