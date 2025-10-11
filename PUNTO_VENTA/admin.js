@@ -562,6 +562,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         }
         else if (op == "update" && rec == "product") {
+            if (!NomP.trim() || !Des.trim() || !Precio1.value.trim() || !Stock1.value.trim()) {
+                notyf.open({
+                    type: 'warning',
+                    message: 'Por favor, completa todos los campos',
+                });
+                return;
+            }
         }
 
 
