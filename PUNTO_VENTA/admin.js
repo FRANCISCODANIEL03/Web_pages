@@ -586,6 +586,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     body: JSON.stringify(updateProd),
                 });
+                data = await response.json();
             } 
         }
 
