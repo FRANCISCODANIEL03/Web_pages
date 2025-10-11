@@ -569,6 +569,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 return;
             }
+            const idp = parseInt(IdP.value);
         }
 
 
