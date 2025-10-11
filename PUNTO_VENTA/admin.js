@@ -555,7 +555,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                             -> Role: ${clientes.role}<br>`;
                 Result.appendChild(li);
                 divRes.style.display = "block";
-            } 
+            } catch (error) {
+                notyf.error('Credenciales incorrectas. Intenta nuevamente.')
+                divRes.style.display = "none";
+                return;
+            }
         }
        
 
