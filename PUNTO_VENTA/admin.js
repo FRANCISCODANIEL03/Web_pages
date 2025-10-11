@@ -588,6 +588,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
                 data = await response.json();
                 notyf.success(`Producto actualizado exitosamente con el ID: ${idp}`);
+                vaciar();
             } 
         }
 
