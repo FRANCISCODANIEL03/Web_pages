@@ -624,6 +624,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
                 // Mostrar mensaje de éxito si se eliminó correctamente
                 notyf.success(`Producto con ID ${ID} eliminado exitosamente.`);
+                vaciar();
             }
         } 
 
