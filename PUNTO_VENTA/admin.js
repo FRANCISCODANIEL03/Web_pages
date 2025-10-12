@@ -603,7 +603,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
             const confirmado = await mostrarConfirmacion("¿Estás seguro de eliminar este producto?");
-        }
-
+            if (!confirmado) {
+                notyf.error("Eliminación cancelada")
+                vaciar()
+                return;
+            }
 
 });
