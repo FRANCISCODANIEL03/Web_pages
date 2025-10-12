@@ -622,6 +622,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     notyf.error("Producto no registrado en la Base de Datos");
                     return;
                 }
+                // Mostrar mensaje de éxito si se eliminó correctamente
+                notyf.success(`Producto con ID ${ID} eliminado exitosamente.`);
             }
         } 
 
