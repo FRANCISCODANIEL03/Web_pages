@@ -595,6 +595,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             }
         } else if (op == "delete" && rec == "product") {
+            if (ID < 1 || isNaN(ID)) {
+                notyf.open({
+                    type: "warning",
+                    message: "Por favor, ingresa un id valido",
+                });
+                return;
+            }
         }
 
 
