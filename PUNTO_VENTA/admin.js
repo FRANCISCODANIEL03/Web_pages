@@ -608,5 +608,17 @@ document.addEventListener("DOMContentLoaded", async () => {
                 vaciar()
                 return;
             }
+            try {
+                const response = await fetch(`${URL}productos/${ID}`, {
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${tokenA}`,
+                    },
+                });
+
+            }
+        } 
+
 
 });
