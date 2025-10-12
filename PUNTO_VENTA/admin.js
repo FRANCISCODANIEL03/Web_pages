@@ -625,6 +625,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 // Mostrar mensaje de éxito si se eliminó correctamente
                 notyf.success(`Producto con ID ${ID} eliminado exitosamente.`);
                 vaciar();
+            } catch (error) {
+                console.error("Error:", error.message);
+                notyf.error(
+                    "Hubo un problema al eliminar el producto, Por favor, inténtalo de nuevo más tarde."
+                );
             }
         } 
 
