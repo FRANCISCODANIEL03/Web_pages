@@ -594,6 +594,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 notyf.error("Hubo un problema al actualizar el producto.");
                 return;
             }
+        } else if (op == "delete" && rec == "product") {
         }
 
 
