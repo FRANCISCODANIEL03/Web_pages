@@ -631,7 +631,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                     "Hubo un problema al eliminar el producto, Por favor, inténtalo de nuevo más tarde."
                 );
             }
-        } 
+        } else if (op == "delete" && rec == "buy") {
+        }
+    });
 
 
 });
