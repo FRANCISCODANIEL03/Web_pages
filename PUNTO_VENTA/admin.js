@@ -617,6 +617,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                 });
 
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    notyf.error("Producto no registrado en la Base de Datos");
+                    return;
+                }
             }
         } 
 
