@@ -670,5 +670,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
+    function mostrarConfirmacion(mensaje) {
+    }
+
 
 });
