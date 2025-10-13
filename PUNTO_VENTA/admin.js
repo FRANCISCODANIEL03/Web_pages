@@ -659,6 +659,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     notyf.error("Compra no registrado en la Base de Datos");
                     return;
                 }
+                // Mostrar mensaje de éxito si se eliminó correctamente
+                notyf.success(`Compra con ID ${ID} eliminado exitosamente.`);
             } 
         }
     });
