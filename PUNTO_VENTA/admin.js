@@ -661,7 +661,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
                 // Mostrar mensaje de éxito si se eliminó correctamente
                 notyf.success(`Compra con ID ${ID} eliminado exitosamente.`);
-            } 
+            } catch (error) {
+                console.error("Error:", error.message);
+                notyf.error(
+                    "Hubo un problema al eliminar la compra, Por favor, inténtalo de nuevo más tarde."
+                );
+            }
         }
     });
 
