@@ -654,6 +654,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                 });
 
+                // Verificar si la eliminación fue exitosa
+                if (!response.ok) {
+                    notyf.error("Compra no registrado en la Base de Datos");
+                    return;
+                }
             } 
         }
     });
