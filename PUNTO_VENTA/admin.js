@@ -671,6 +671,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     function mostrarConfirmacion(mensaje) {
+        return new Promise((resolve) => {
+        });
     }
 
 
