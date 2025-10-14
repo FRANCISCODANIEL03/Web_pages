@@ -696,6 +696,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 resolve(false);
             };
 
+            btnYes.addEventListener("click", onYes);
+            btnNo.addEventListener("click", onNo);
         });
     }
 
