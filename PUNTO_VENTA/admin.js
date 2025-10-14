@@ -701,5 +701,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
+    // Mostrar/ocultar recursos
+    cartButton.addEventListener("click", () => {
+        cart.classList.toggle("visible");
+        setTimeout(() => {
+            cart.classList.toggle("visible");
+        }, 4000);
+    });
 
 });
