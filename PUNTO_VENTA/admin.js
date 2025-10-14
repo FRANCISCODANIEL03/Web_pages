@@ -674,6 +674,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         return new Promise((resolve) => {
             const modal = document.getElementById("confirmModal");
             const message = document.getElementById("confirmMessage");
+            const btnYes = document.getElementById("confirmYes");
         });
     }
 
