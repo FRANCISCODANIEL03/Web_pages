@@ -691,6 +691,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 resolve(true);
             };
 
+            const onNo = () => {
+                limpiar();
+                resolve(false);
+            };
+
         });
     }
 
