@@ -677,6 +677,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             const btnYes = document.getElementById("confirmYes");
             const btnNo = document.getElementById("confirmNo");
 
+            message.textContent = mensaje;
+            modal.style.display = "flex";
+
         });
     }
 
