@@ -686,6 +686,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 btnNo.removeEventListener("click", onNo);
             };
 
+            const onYes = () => {
+                limpiar();
+                resolve(true);
+            };
+
         });
     }
 
