@@ -673,6 +673,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function mostrarConfirmacion(mensaje) {
         return new Promise((resolve) => {
             const modal = document.getElementById("confirmModal");
+            const message = document.getElementById("confirmMessage");
         });
     }
 
