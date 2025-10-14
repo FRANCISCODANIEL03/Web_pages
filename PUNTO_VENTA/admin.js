@@ -680,6 +680,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             message.textContent = mensaje;
             modal.style.display = "flex";
 
+            const limpiar = () => {
+                modal.style.display = "none";
+                btnYes.removeEventListener("click", onYes);
+                btnNo.removeEventListener("click", onNo);
+            };
+
         });
     }
 
