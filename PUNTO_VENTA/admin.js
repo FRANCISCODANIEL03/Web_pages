@@ -115,4 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         ],
     });
 
+    prodButton.addEventListener("click", () => {
+    });
+
 });
