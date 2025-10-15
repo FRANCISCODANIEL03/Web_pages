@@ -118,6 +118,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     prodButton.addEventListener("click", () => {
         nameL.textContent = "PRODUCTOS";
 
+        [searchButton, insButton, upButton, delButton].forEach((button) => {
+            button.style.display = "block"; // Mostrar en el DOM
+            button.classList.remove("animated-hidden");
+            button.classList.add("animated-visible");
+        });
+
     });
 
 });
