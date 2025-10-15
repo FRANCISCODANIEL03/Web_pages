@@ -116,6 +116,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     prodButton.addEventListener("click", () => {
+        nameL.textContent = "PRODUCTOS";
+
     });
 
 });
