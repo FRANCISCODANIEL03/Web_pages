@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             button.classList.add("animated-visible");
         });
 
+        cont = 1;
     });
 
 });
