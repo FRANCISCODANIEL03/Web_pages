@@ -715,5 +715,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.href = "index.html";
     });
 
+    //Ocultar los inputs
+    function hiddenI() {
+    }
 
 });
