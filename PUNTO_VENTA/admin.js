@@ -722,6 +722,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divNom.style.display = "none";
         divApe1.style.display = "none";
         divApe2.style.display = "none";
+        divDes.style.display = "none";
     }
 
 });
