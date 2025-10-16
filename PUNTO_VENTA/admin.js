@@ -718,6 +718,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //Ocultar los inputs
     function hiddenI() {
         divId.style.display = "none";
+        divIdP.style.display = "none";
     }
 
 });
