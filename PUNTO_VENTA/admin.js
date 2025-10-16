@@ -719,6 +719,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function hiddenI() {
         divId.style.display = "none";
         divIdP.style.display = "none";
+        divNom.style.display = "none";
     }
 
 });
