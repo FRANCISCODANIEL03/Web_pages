@@ -720,6 +720,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divId.style.display = "none";
         divIdP.style.display = "none";
         divNom.style.display = "none";
+        divApe1.style.display = "none";
     }
 
 });
