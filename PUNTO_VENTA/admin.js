@@ -733,4 +733,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         oper.style.display = "none";
     }
 
+    const verProductosBtn = document.getElementById("verProductosBtn");
+
 });
