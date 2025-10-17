@@ -738,5 +738,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const cerrarModalBtn = document.getElementById("cerrarModalBtn");
     const contenedorProductos = document.getElementById("contenedorProductos");
 
+    verProductosBtn.addEventListener("click", async () => {
+    });
 
 });
