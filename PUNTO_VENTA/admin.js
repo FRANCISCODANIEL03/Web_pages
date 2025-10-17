@@ -726,6 +726,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divCat.style.display = "none";
         divEm.style.display = "none";
         divNomP.style.display = "none";
+        divPrecio.style.display = "none";
     }
 
 });
