@@ -736,5 +736,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const verProductosBtn = document.getElementById("verProductosBtn");
     const modal = document.getElementById("modalProductos");
     const cerrarModalBtn = document.getElementById("cerrarModalBtn");
+    const contenedorProductos = document.getElementById("contenedorProductos");
+
 
 });
