@@ -730,6 +730,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divPass.style.display = "none";
         divPassc.style.display = "none";
         divStock.style.display = "none";
+        oper.style.display = "none";
     }
 
 });
