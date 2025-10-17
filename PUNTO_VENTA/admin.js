@@ -728,6 +728,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         divNomP.style.display = "none";
         divPrecio.style.display = "none";
         divPass.style.display = "none";
+        divPassc.style.display = "none";
     }
 
 });
