@@ -739,6 +739,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     const contenedorProductos = document.getElementById("contenedorProductos");
 
     verProductosBtn.addEventListener("click", async () => {
+        try {
+            const response = await fetch(`${URL}productos?limit=100`, {
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${tokenA}`,
+                },
+            });
+
+        } 
     });
 
 });
