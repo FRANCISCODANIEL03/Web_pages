@@ -754,6 +754,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             contenedorProductos.innerHTML = ""; // Limpiar contenido anterior
 
             productos.forEach((producto) => {
+                const div = document.createElement("div");
             });
 
         } catch (error) {
