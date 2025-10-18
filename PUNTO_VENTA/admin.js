@@ -757,6 +757,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const div = document.createElement("div");
                 div.classList.add("producto");
 
+                if (producto.stock === 0) {
+                    div.classList.add("stock-bajo");
+                }
             });
 
         } catch (error) {
