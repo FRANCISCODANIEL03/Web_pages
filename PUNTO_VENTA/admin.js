@@ -747,7 +747,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 },
             });
 
-        } 
+        } catch (error) {
+            console.error(error);
+            notyf.error("No se pudieron obtener los productos.");
+        }
     });
 
 });
