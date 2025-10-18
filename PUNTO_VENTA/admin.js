@@ -751,6 +751,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 throw new Error("Error al obtener los datos de la API");
 
             const productos = await response.json();
+            contenedorProductos.innerHTML = ""; // Limpiar contenido anterior
+
         } catch (error) {
             console.error(error);
             notyf.error("No se pudieron obtener los productos.");
