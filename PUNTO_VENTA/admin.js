@@ -753,6 +753,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             const productos = await response.json();
             contenedorProductos.innerHTML = ""; // Limpiar contenido anterior
 
+            productos.forEach((producto) => {
+            });
+
         } catch (error) {
             console.error(error);
             notyf.error("No se pudieron obtener los productos.");
