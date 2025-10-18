@@ -750,6 +750,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (!response.ok)
                 throw new Error("Error al obtener los datos de la API");
 
+            const productos = await response.json();
         } catch (error) {
             console.error(error);
             notyf.error("No se pudieron obtener los productos.");
