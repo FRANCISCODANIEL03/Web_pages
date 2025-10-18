@@ -755,6 +755,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             productos.forEach((producto) => {
                 const div = document.createElement("div");
+                div.classList.add("producto");
+
             });
 
         } catch (error) {
