@@ -767,6 +767,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                     div.classList.add("stock-alto");
                 }
 
+                div.innerHTML = `<strong>ID:</strong> ${producto.id_producto} |
+                             <strong>Nombre:</strong> ${producto.nombre_producto} |
+                             <strong>Cantidad:</strong> ${producto.stock}`;
             });
 
         } catch (error) {
