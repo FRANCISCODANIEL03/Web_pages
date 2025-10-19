@@ -770,6 +770,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 div.innerHTML = `<strong>ID:</strong> ${producto.id_producto} |
                              <strong>Nombre:</strong> ${producto.nombre_producto} |
                              <strong>Cantidad:</strong> ${producto.stock}`;
+                contenedorProductos.appendChild(div);
             });
 
         } catch (error) {
