@@ -784,4 +784,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         modal.classList.add("hidden"); // Ocultar modal
     });
 
+    opFac.addEventListener("click", () => {
+    });
 });
