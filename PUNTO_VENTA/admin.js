@@ -788,5 +788,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         const Id = document.getElementById("id").value;
         console.log(Id);
 
+        if (!parseInt(Id)) {
+            notyf.error('No hay una compra reciente para generar factura.');
+            return;
+        }
     });
 });
