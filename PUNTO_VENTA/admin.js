@@ -780,4 +780,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
+    cerrarModalBtn.addEventListener("click", () => {
+        modal.classList.add("hidden"); // Ocultar modal
+    });
+
 });
