@@ -763,7 +763,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                     div.classList.add("stock-medio");
                 } else if (producto.stock > 200) {
                     div.classList.add("stock-fuera");
+                } else {
+                    div.classList.add("stock-alto");
                 }
+
             });
 
         } catch (error) {
