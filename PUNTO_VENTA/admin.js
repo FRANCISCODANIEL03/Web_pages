@@ -785,5 +785,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     opFac.addEventListener("click", () => {
+        const Id = document.getElementById("id").value;
     });
 });
