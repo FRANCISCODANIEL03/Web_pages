@@ -761,6 +761,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     div.classList.add("stock-bajo");
                 } else if (producto.stock < 10) {
                     div.classList.add("stock-medio");
+                } else if (producto.stock > 200) {
+                    div.classList.add("stock-fuera");
                 }
             });
 
