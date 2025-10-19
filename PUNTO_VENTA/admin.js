@@ -773,6 +773,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 contenedorProductos.appendChild(div);
             });
 
+            modal.classList.remove("hidden"); // Mostrar modal
         } catch (error) {
             console.error(error);
             notyf.error("No se pudieron obtener los productos.");
