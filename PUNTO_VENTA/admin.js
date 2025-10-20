@@ -800,5 +800,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 "Authorization": `Bearer ${tokenA}`
             }
         })
+            .then(response => {
+                if (!response.ok) throw new Error("Error al descargar el archivo");
+                return response.blob(); // Obtener la respuesta como blob
+            })
     });
 });
