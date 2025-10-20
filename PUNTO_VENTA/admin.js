@@ -793,5 +793,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
         const tokenA = localStorage.getItem("token");
+        fetch(`${URL}facturas/generate/${parseInt(Id)}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${tokenA}`
+            }
+        })
     });
 });
