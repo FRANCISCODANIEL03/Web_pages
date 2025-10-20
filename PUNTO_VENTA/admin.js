@@ -816,5 +816,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 notyf.success('Factura descargada con éxito.');
                 opFac.style.display = "none"
             })
+            .catch(err => {
+                console.error("Hubo un error:", err);
+            });
     });
 });
