@@ -5,4 +5,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const logoutButton = document.getElementById("logout-button");
     const checkoutButton = document.getElementById("checkout-button");
     const downloadBtn = document.getElementById("downloadBtn");
+    const addToCartButton = document.getElementById("add-to-cart-button");
 });
