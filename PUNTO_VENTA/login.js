@@ -6,4 +6,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const checkoutButton = document.getElementById("checkout-button");
     const downloadBtn = document.getElementById("downloadBtn");
     const addToCartButton = document.getElementById("add-to-cart-button");
+    const quantityInput = document.getElementById("quantity");
 });
