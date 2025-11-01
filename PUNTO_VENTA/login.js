@@ -7,4 +7,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const downloadBtn = document.getElementById("downloadBtn");
     const addToCartButton = document.getElementById("add-to-cart-button");
     const quantityInput = document.getElementById("quantity");
+    const cartList = document.getElementById("cart-list");
 });
