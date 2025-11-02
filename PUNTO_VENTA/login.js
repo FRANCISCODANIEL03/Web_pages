@@ -8,4 +8,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const addToCartButton = document.getElementById("add-to-cart-button");
     const quantityInput = document.getElementById("quantity");
     const cartList = document.getElementById("cart-list");
+    const totalPriceElement = document.getElementById("total-price");
 });
