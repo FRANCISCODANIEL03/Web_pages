@@ -11,4 +11,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const totalPriceElement = document.getElementById("total-price");
     const client = document.getElementById("client");
     const productList = document.getElementById("product-list");
+    const productSelect = document.getElementById("product-select");
 });
