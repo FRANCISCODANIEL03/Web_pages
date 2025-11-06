@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const client = document.getElementById("client");
     const productList = document.getElementById("product-list");
     const productSelect = document.getElementById("product-select");
+    const categoryFilter = document.getElementById("categoryFilter");
 });
