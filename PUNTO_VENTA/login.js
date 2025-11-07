@@ -13,4 +13,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const productList = document.getElementById("product-list");
     const productSelect = document.getElementById("product-select");
     const categoryFilter = document.getElementById("categoryFilter");
+    const paginationContainer = document.createElement("div"); // Contenedor de paginación
 });
