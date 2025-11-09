@@ -15,4 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const categoryFilter = document.getElementById("categoryFilter");
     const paginationContainer = document.createElement("div"); // Contenedor de paginación
     paginationContainer.id = "pagination-container";
+    productList.parentNode.appendChild(paginationContainer); // Agregar debajo de la lista
+
 });
