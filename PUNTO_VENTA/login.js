@@ -17,4 +17,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     paginationContainer.id = "pagination-container";
     productList.parentNode.appendChild(paginationContainer); // Agregar debajo de la lista
 
+    let productos = [];
 });
