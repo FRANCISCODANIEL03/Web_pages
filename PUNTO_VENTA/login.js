@@ -19,4 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let productos = [];
     let currentPage = 1;
+    const itemsPerPage = 10;
+
 });
