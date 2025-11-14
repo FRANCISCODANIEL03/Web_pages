@@ -22,4 +22,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     const itemsPerPage = 10;
 
     let total = 0;
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 });
