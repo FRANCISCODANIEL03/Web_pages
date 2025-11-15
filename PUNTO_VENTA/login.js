@@ -23,4 +23,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let total = 0;
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    if (carrito.length == 0) {
+        totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
+    }
+
 });
