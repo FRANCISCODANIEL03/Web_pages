@@ -27,4 +27,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
     }
 
+    // Función para guardar en localStorage
+    function saveCartToLocalStorage() {
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        localStorage.setItem("productosConStock", JSON.stringify(productos));
+    }
+
 });
