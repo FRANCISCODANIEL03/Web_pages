@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function updateTotals() {
+        const IVA = total * 0.16;
     }
 });
