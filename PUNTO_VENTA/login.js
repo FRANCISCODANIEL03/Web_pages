@@ -35,5 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function updateTotals() {
         const IVA = total * 0.16;
+        totalPriceElement.textContent = `Subtotal: $${total.toFixed(2)} + 
+        IVA $${IVA.toFixed(2)}
+        Total: $${(total + IVA).toFixed(2)}`;
     }
 });
