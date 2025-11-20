@@ -39,4 +39,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         IVA $${IVA.toFixed(2)}
         Total: $${(total + IVA).toFixed(2)}`;
     }
+
+    function updateProductDisplay(id, name, stock, price) {
+        
+    }
 });
