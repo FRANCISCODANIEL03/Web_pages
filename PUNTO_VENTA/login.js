@@ -41,6 +41,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function updateProductDisplay(id, name, stock, price) {
-        
+        const productElement = productList.querySelector(`[data-id="${id}"]`);
     }
 });
