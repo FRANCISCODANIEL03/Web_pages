@@ -42,5 +42,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function updateProductDisplay(id, name, stock, price) {
         const productElement = productList.querySelector(`[data-id="${id}"]`);
+        if (productElement) {
+            productElement.textContent = `${name} - Stock: ${stock} - Precio: $${price}`;
+        }
     }
 });
