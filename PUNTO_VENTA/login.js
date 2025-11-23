@@ -46,4 +46,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             productElement.textContent = `${name} - Stock: ${stock} - Precio: $${price}`;
         }
     }
+
+    // Función para crear un nuevo item
+    function addNewCartItem(productId, productName, productPrice, quantity, option, skipPush = false) {
+        // Crear botones
+
 });
