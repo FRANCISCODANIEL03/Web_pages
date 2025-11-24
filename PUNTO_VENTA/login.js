@@ -51,4 +51,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     function addNewCartItem(productId, productName, productPrice, quantity, option, skipPush = false) {
         // Crear botones
         const increaseButton = document.createElement("button");
+        increaseButton.classList.add("btns");
 });
