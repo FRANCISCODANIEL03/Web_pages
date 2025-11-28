@@ -58,4 +58,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         decreaseButton.classList.add("btns");
         decreaseButton.innerHTML = `<i class="bi bi-dash"></i>`;
 
+        const deleteButton = document.createElement("button");
+
 });
