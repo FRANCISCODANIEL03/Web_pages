@@ -60,5 +60,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const deleteButton = document.createElement("button");
         deleteButton.classList.add("btns");
+        deleteButton.innerHTML = `<i class="bi bi-trash"></i>`;
 
 });
