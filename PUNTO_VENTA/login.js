@@ -62,4 +62,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         deleteButton.classList.add("btns");
         deleteButton.innerHTML = `<i class="bi bi-trash"></i>`;
 
+        // Crear nuevo elemento visual
+        const listItem = document.createElement("li");
+
+
 });
