@@ -65,5 +65,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Crear nuevo elemento visual
         const listItem = document.createElement("li");
 
+        const totalProductPrice = productPrice * quantity;
 
 });
