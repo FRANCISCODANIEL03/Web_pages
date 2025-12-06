@@ -71,5 +71,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         listItem.dataset.total = totalProductPrice;
 
         const contentDiv = document.createElement("div");
+        contentDiv.innerHTML = `
+        Producto: ${productName}<br>
+        Cantidad: <span class="quantity">${quantity}</span><br>
+        Total: $<span class="item-total">${totalProductPrice.toFixed(2)}</span>
+    `;
 
 });
