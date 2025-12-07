@@ -77,4 +77,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         Total: $<span class="item-total">${totalProductPrice.toFixed(2)}</span>
     `;
 
+        // Botón aumentar
+        increaseButton.addEventListener("click", () => {
+        });
+
+    });
 });
