@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Botón aumentar
         increaseButton.addEventListener("click", () => {
             let stock = parseInt(option.dataset.stock);
+            if (stock < 1) return;
+
         });
 
     });
