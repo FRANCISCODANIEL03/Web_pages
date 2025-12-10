@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let stock = parseInt(option.dataset.stock);
             if (stock < 1) return;
 
+            let qty = parseInt(listItem.dataset.quantity) + 1;
         });
 
     });
