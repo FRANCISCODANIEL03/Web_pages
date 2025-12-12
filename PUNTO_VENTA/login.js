@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let qty = parseInt(listItem.dataset.quantity) + 1;
             let newTotal = qty * productPrice;
             listItem.dataset.quantity = qty;
+            listItem.dataset.total = newTotal;
         });
 
     });
