@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             let newTotal = qty * productPrice;
             listItem.dataset.quantity = qty;
             listItem.dataset.total = newTotal;
+            contentDiv.querySelector(".quantity").textContent = qty;
         });
 
     });
