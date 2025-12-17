@@ -95,5 +95,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (producto) producto.stock = stock - 1;
             localStorage.setItem("productosConStock", JSON.stringify(productos));
 
+            updateProductDisplay(productId, productName, stock - 1, productPrice);
+
+           
+        });
 
 });
