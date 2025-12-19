@@ -98,7 +98,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             updateProductDisplay(productId, productName, stock - 1, productPrice);
 
             const index = carrito.findIndex(p => p.productoId === parseInt(productId));
-            
+            if (index !== -1) {
+                carrito[index].cantidad_productos = qty;
+                saveCartToLocalStorage()
+            }
+
         });
 
 });
