@@ -103,6 +103,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 saveCartToLocalStorage()
             }
 
+            total += productPrice;
+            updateTotals();
+
         });
 
 });
