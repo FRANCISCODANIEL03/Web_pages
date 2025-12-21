@@ -106,6 +106,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             total += productPrice;
             updateTotals();
 
+            if (qty > 1) decreaseButton.disabled = false;
+            if (stock - 1 <= 0) {
+                increaseButton.disabled = true;
+            }
+
         });
 
 });
