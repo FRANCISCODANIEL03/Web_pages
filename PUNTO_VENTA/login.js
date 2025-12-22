@@ -115,4 +115,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (li) aplicarEstiloStock(li, stock - 1);
         });
 
+        // Botón disminuir
+        decreaseButton.addEventListener("click", () => {
+            let qty = parseInt(listItem.dataset.quantity);
+            if (qty <= 1) return;
+
+
+        });
+
 });
