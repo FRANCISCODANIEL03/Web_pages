@@ -120,6 +120,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             let qty = parseInt(listItem.dataset.quantity);
             if (qty <= 1) return;
 
+            qty -= 1;
+            let newTotal = qty * productPrice;
+            listItem.dataset.quantity = qty;
+            listItem.dataset.total = newTotal;
+            contentDiv.querySelector(".quantity").textContent = qty;
+            contentDiv.querySelector(".item-total").textContent = newTotal.toFixed(2);
 
         });
 
