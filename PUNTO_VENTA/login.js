@@ -127,6 +127,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             contentDiv.querySelector(".quantity").textContent = qty;
             contentDiv.querySelector(".item-total").textContent = newTotal.toFixed(2);
 
+            let stock = parseInt(option.dataset.stock) + 1;
+            option.dataset.stock = stock;
+
         });
 
 });
