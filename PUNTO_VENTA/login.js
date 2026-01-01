@@ -130,6 +130,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             let stock = parseInt(option.dataset.stock) + 1;
             option.dataset.stock = stock;
 
+            const producto = productos.find(p => p.id_producto === parseInt(productId));
+            if (producto) producto.stock = stock;
+            localStorage.setItem("productosConStock", JSON.stringify(productos));
+
         });
 
 });
