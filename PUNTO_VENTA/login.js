@@ -141,6 +141,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 carrito[index].cantidad_productos = qty;
                 saveCartToLocalStorage()
             }
+            total -= productPrice;
+            updateTotals();
+
         });
 
 });
