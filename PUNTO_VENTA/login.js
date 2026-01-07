@@ -149,6 +149,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 increaseButton.disabled = false;
             }
 
+            const li = document.querySelector(`li[data-id="${productId}"]`);
+            if (li) aplicarEstiloStock(li, stock);
+
         });
 
 });
