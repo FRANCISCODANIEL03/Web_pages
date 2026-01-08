@@ -154,4 +154,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         });
 
+        // Botón eliminar
+        deleteButton.addEventListener("click", () => {
+            const itemTotal = parseFloat(listItem.dataset.total);
+            const itemQuantity = parseInt(listItem.dataset.quantity);
+            cartList.removeChild(listItem);
+
 });
