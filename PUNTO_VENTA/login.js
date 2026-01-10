@@ -160,4 +160,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             const itemQuantity = parseInt(listItem.dataset.quantity);
             cartList.removeChild(listItem);
 
+            let stock = parseInt(option.dataset.stock) + itemQuantity;
+            option.dataset.stock = stock;
+
+
 });
