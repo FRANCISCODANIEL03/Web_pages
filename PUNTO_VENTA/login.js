@@ -426,4 +426,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
 
+    addToCartButton.addEventListener("click", () => {
+    });
+
 });
