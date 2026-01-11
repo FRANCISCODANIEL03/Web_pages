@@ -419,6 +419,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         localStorage.removeItem("clienteId");
         localStorage.removeItem("clienteNombre");
         localStorage.removeItem("carrito");
+        localStorage.removeItem("productosConStock");
+        localStorage.removeItem("idCompra");
     });
 
 
