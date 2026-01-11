@@ -421,6 +421,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         localStorage.removeItem("carrito");
         localStorage.removeItem("productosConStock");
         localStorage.removeItem("idCompra");
+        // Redirigir a la página de inicio de sesión
+        window.location.href = 'index.html'
     });
 
 
