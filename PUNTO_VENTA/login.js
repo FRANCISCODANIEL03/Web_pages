@@ -429,6 +429,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     addToCartButton.addEventListener("click", () => {
         const selectedOption = productSelect.options[productSelect.selectedIndex];
         const productId = selectedOption.value;
+        const productName = selectedOption.textContent;
     });
 
 });
