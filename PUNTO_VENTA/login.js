@@ -167,4 +167,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (producto) producto.stock = stock;
             localStorage.setItem("productosConStock", JSON.stringify(productos));
 
+            updateProductDisplay(productId, productName, stock, productPrice);
+
+            total -= itemTotal;
+            updateTotals();
+
+            const index = carrito.findIndex(p => p.productoId === parseInt(productId));
+            if (index !== -1) carrito.splice(index, 1);
+
 });
