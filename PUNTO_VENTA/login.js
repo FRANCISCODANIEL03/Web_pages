@@ -91,6 +91,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             option.dataset.stock = stock - 1;
 
+            const producto = productos.find(p => p.id_producto === parseInt(productId));
+            if (producto) producto.stock = stock - 1;
+            localStorage.setItem("productosConStock", JSON.stringify(productos));
 
-    });
+
 });
