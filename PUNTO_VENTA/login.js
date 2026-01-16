@@ -175,4 +175,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             const index = carrito.findIndex(p => p.productoId === parseInt(productId));
             if (index !== -1) carrito.splice(index, 1);
 
+            saveCartToLocalStorage();
+
+
+        });
+
+
 });
