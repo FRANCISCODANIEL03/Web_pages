@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const buttonContainer = document.createElement("div");
         buttonContainer.classList.add("btncont");
         buttonContainer.appendChild(increaseButton);
-
+        buttonContainer.appendChild(decreaseButton);
     }
 
 
