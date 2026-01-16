@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
 
             const li = document.querySelector(`li[data-id="${productId}"]`);
-            
+            if (li) aplicarEstiloStock(li, stock);
 
         });
 
