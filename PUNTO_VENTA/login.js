@@ -178,6 +178,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             saveCartToLocalStorage();
 
             notyf.success(`Producto eliminado del carrito: ${productName}`);
+            if (carrito.length == 0) {
+                totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
+            }
 
         });
 
