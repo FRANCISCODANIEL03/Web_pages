@@ -182,6 +182,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
             }
 
+            const li = document.querySelector(`li[data-id="${productId}"]`);
+            
+
         });
 
 
