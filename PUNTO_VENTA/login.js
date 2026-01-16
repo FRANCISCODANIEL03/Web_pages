@@ -190,6 +190,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Contenedor de botones
         const buttonContainer = document.createElement("div");
         buttonContainer.classList.add("btncont");
+        buttonContainer.appendChild(increaseButton);
 
     }
 
