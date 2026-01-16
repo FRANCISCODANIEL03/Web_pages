@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             saveCartToLocalStorage();
 
+            notyf.success(`Producto eliminado del carrito: ${productName}`);
 
         });
 
