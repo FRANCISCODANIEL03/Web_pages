@@ -192,6 +192,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         buttonContainer.classList.add("btncont");
         buttonContainer.appendChild(increaseButton);
         buttonContainer.appendChild(decreaseButton);
+        buttonContainer.appendChild(deleteButton);
+
+
     }
 
 
