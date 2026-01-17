@@ -194,6 +194,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         buttonContainer.appendChild(decreaseButton);
         buttonContainer.appendChild(deleteButton);
 
+        // Agregar al DOM
+        listItem.appendChild(contentDiv);
 
     }
 
