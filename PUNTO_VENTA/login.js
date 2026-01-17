@@ -213,6 +213,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             saveCartToLocalStorage();
 
             let newStock = parseInt(option.dataset.stock) - quantity;
+            option.dataset.stock = newStock;
 
         }
 
