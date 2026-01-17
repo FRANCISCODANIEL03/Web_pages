@@ -207,6 +207,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             increaseButton.disabled = false;
         }
 
+        // Agregar al arreglo del carrito
+        if (!skipPush) {
+
+        }
+
+
     }
 
 
