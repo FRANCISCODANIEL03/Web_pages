@@ -201,6 +201,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Desactivar botones según stock y cantidad
         if (quantity <= 1) decreaseButton.disabled = true;
+        if (parseInt(option.dataset.stock) <= 0) {
+            increaseButton.disabled = true;
+        } else {
+            increaseButton.disabled = false;
+        }
+
     }
 
 
