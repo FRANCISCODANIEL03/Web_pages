@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Agregar al DOM
         listItem.appendChild(contentDiv);
         listItem.appendChild(buttonContainer);
+        cartList.appendChild(listItem);
 
     }
 
