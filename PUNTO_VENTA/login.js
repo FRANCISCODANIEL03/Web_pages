@@ -199,6 +199,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         listItem.appendChild(buttonContainer);
         cartList.appendChild(listItem);
 
+        // Desactivar botones según stock y cantidad
+        if (quantity <= 1) decreaseButton.disabled = true;
     }
 
 
