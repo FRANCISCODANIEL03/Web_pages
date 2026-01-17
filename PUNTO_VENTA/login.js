@@ -210,6 +210,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Agregar al arreglo del carrito
         if (!skipPush) {
             carrito.push({ productoId: parseInt(productId), cantidad_productos: quantity });
+            saveCartToLocalStorage();
 
         }
 
