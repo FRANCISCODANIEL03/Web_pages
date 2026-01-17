@@ -212,6 +212,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             carrito.push({ productoId: parseInt(productId), cantidad_productos: quantity });
             saveCartToLocalStorage();
 
+            let newStock = parseInt(option.dataset.stock) - quantity;
+
         }
 
 
