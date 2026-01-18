@@ -228,6 +228,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
 
+        total += totalProductPrice;
     }
 
 });
