@@ -214,6 +214,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             let newStock = parseInt(option.dataset.stock) - quantity;
             option.dataset.stock = newStock;
+            updateProductDisplay(productId, productName, newStock, productPrice);
 
         }
 
