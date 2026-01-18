@@ -217,6 +217,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             updateProductDisplay(productId, productName, newStock, productPrice);
 
             const producto = productos.find(p => p.id_producto === parseInt(productId));
+            if (producto) producto.stock = newStock;
 
         }
 
