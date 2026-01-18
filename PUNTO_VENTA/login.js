@@ -232,4 +232,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         updateTotals();
     }
 
+    const clientId = localStorage.getItem("clienteId");
+
 });
