@@ -216,6 +216,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             option.dataset.stock = newStock;
             updateProductDisplay(productId, productName, newStock, productPrice);
 
+            const producto = productos.find(p => p.id_producto === parseInt(productId));
+
         }
 
 
