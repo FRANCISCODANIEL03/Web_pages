@@ -223,6 +223,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             notyf.success(`Agregado al carrito: ${productName} - Cantidad: ${quantity}`);
 
             const li = document.querySelector(`li[data-id="${productId}"]`);
+            if (li) aplicarEstiloStock(li, newStock);
 
         }
 
