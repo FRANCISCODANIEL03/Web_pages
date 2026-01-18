@@ -220,6 +220,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (producto) producto.stock = newStock;
             localStorage.setItem("productosConStock", JSON.stringify(productos));
 
+            notyf.success(`Agregado al carrito: ${productName} - Cantidad: ${quantity}`);
 
         }
 
