@@ -271,6 +271,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
         if (!response.ok) throw new Error("Error al obtener los datos de la API");
 
+        productos = await response.json();
+
     }
 
 
