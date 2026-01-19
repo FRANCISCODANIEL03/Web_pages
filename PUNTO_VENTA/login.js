@@ -233,5 +233,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const clientId = localStorage.getItem("clienteId");
+    const clientNombre = localStorage.getItem("clienteNombre");
+
 
 });
