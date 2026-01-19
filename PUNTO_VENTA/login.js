@@ -254,5 +254,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Primero cargar el carrito desde localStorage
     const carritoGuardado = JSON.parse(localStorage.getItem("carrito")) || [];
-
+    carrito.length = 0;
 });
