@@ -236,5 +236,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const clientNombre = localStorage.getItem("clienteNombre");
     const clienteId = parseInt(clientId);
 
+    client.textContent = clientNombre
+
 
 });
