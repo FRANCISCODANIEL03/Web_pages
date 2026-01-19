@@ -257,4 +257,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     carrito.length = 0;
     carrito.push(...carritoGuardado); // Copiar los datos
 
+    // Luego cargar los productos (modificados o desde API)
+    let productosGuardados = JSON.parse(localStorage.getItem("productosConStock"));
+
+
 });
