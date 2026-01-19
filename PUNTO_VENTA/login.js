@@ -263,6 +263,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (productosGuardados) {
         productos = productosGuardados;
     } else {
+        const response = await fetch(`${URL}/api/v1/productos?limit=100`, {
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${tokenA}`
+            }
+        });
     }
 
 
