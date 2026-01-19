@@ -269,6 +269,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 "Authorization": `Bearer ${tokenA}`
             }
         });
+        if (!response.ok) throw new Error("Error al obtener los datos de la API");
+
     }
 
 
