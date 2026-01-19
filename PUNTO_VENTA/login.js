@@ -280,6 +280,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         });
 
+        localStorage.setItem("productosConStock", JSON.stringify(productos));
     }
 
 
