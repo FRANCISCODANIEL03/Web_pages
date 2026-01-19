@@ -273,6 +273,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         productos = await response.json();
 
+        carrito.forEach(item => {
+            const product = productos.find(p => p.id_producto === item.productoId);
+            if (product) {
+                product.stock -= item.cantidad_productos;
+            }
+        });
+
     }
 
 
