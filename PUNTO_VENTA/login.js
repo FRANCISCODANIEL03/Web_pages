@@ -239,5 +239,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     client.textContent = clientNombre
     const tokenA = localStorage.getItem("token")
 
+    const notyf = new Notyf({
+        position: {
+            x: 'right',
+            y: 'top'
+        },
+        types: [
+            {
+                type: 'warning',
+                background: 'orange',
+            }
+        ]
+    });
+
 
 });
