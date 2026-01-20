@@ -284,5 +284,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     actualizarPaginacion(productos);
+    mostrarPagina(1, productos);
+
 
 });
