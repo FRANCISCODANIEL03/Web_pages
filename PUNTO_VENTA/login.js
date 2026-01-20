@@ -309,5 +309,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
     }
 
+    function mostrarPagina(page, productos) {
+    }
+
 
 });
