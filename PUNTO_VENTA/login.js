@@ -305,5 +305,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
+    if (carrito.length == 0) {
+        totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
+    }
+
 
 });
