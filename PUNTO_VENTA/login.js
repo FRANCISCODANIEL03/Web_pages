@@ -286,5 +286,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     actualizarPaginacion(productos);
     mostrarPagina(1, productos);
 
+    // Reconstruir visual del carrito
+    carrito.forEach(item => {
+        const product = productos.find(p => p.id_producto === item.productoId);
+        if (product) {
+            const option = productSelect.querySelector(`option[value="${product.id_producto}"]`);
+            if (option) {
+                option.dataset.stock = product.stock; // Asegura que el stock en el option esté actualizado
+                addNewCartItem(
+                    product.id_producto,
+                    product.nombre_producto,
+                    product.precio,
+                    item.cantidad_productos,
+                    option,
+                    true
+                );
+            }
+        }
+    });
+
 
 });
