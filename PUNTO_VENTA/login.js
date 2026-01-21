@@ -310,6 +310,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function mostrarPagina(page, productos) {
+        currentPage = page;
     }
 
 
