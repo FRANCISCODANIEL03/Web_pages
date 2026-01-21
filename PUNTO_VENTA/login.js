@@ -312,6 +312,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function mostrarPagina(page, productos) {
         currentPage = page;
         const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
     }
 
 
