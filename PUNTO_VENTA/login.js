@@ -313,6 +313,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         currentPage = page;
         const startIndex = (page - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
+        const productosPagina = productos.slice(startIndex, endIndex);
     }
 
 
