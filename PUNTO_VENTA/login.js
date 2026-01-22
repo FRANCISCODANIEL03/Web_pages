@@ -321,6 +321,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         productList.innerHTML = "";
         productSelect.innerHTML = "";
 
+        //  Guardar la categoría seleccionada
+        const selectedCategory = categoryFilter.value;
+
     }
 
 
