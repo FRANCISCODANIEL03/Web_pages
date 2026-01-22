@@ -317,5 +317,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         actualizarListaProductos(productosPagina);
     }
 
+    function actualizarListaProductos(productosPagina) {
+    }
+
 
 });
