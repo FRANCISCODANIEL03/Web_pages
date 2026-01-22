@@ -318,6 +318,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function actualizarListaProductos(productosPagina) {
+        productList.innerHTML = "";
     }
 
 
