@@ -478,6 +478,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             detalles: carrito
         };
 
+        try {
+        } catch (error) {
+            console.error("Error:", error)
+            notyf.error('Hubo un problema al realizar la compra.');
+        }
     });
 
 });
