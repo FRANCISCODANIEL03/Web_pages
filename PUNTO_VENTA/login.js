@@ -472,6 +472,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
+        const data = {
+            clienteId,
+            tiendaId: 1,
+            detalles: carrito
+        };
+
     });
 
 });
