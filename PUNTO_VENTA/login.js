@@ -463,6 +463,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Realizar compra
     checkoutButton.addEventListener("click", async () => {
+
+        if (carrito.length === 0) {
+            notyf.open({
+                type: 'warning',
+                message: 'El carrito está vacío.',
+            });
+            return;
+        }
+
     });
 
 });
