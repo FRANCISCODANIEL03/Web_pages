@@ -450,6 +450,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
+        // Buscar si ya está en el carrito
+        const existingItem = cartList.querySelector(`li[data-product-id="${productId}"]`);
+        if (existingItem) {
+            notyf.error(`El producto ${productName} ya está en el carrito.`);
+            return;
+        }
+
     });
 
 });
