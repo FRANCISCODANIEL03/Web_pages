@@ -457,6 +457,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
+        // ↓↓↓ Nuevo producto en el carrito ↓↓↓
+        addNewCartItem(productId, productName, productPrice, quantity, selectedOption);
     });
 
 });
