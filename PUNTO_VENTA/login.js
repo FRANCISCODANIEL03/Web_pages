@@ -442,6 +442,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
+        if (quantity > productStock) {
+            notyf.open({
+                type: 'warning',
+                message: `No hay suficiente stock de ${productName}.`,
+            });
+            return;
+        }
+
     });
 
 });
