@@ -461,4 +461,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         addNewCartItem(productId, productName, productPrice, quantity, selectedOption);
     });
 
+    // Realizar compra
+    checkoutButton.addEventListener("click", async () => {
+    });
+
 });
