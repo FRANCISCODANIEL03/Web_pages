@@ -434,6 +434,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         let productStock = parseInt(selectedOption.dataset.stock);
         const quantity = parseInt(quantityInput.value);
 
+        if (parseInt(productId) < 0 || isNaN(quantity) || quantity < 1) {
+            notyf.open({
+                type: 'warning',
+                message: 'Por favor, ingresa una cantidad válida.',
+            });
+            return;
+        }
+
     });
 
 });
