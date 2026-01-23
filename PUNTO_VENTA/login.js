@@ -479,6 +479,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         };
 
         try {
+            const response = await fetch(`${URL}/api/v1/compras`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${tokenA}`
+                },
+                body: JSON.stringify(data)
+            });
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
