@@ -432,6 +432,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const productName = selectedOption.textContent;
         const productPrice = parseFloat(selectedOption.dataset.price);
         let productStock = parseInt(selectedOption.dataset.stock);
+        const quantity = parseInt(quantityInput.value);
+
     });
 
 });
