@@ -490,6 +490,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const data2 = await response.json()
             console.log(data2);
 
+            if (!response.ok) throw new Error("Error al realizar la compra");
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
