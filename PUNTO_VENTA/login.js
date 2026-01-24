@@ -487,6 +487,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 },
                 body: JSON.stringify(data)
             });
+            const data2 = await response.json()
+            console.log(data2);
+
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
