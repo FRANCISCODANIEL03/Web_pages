@@ -492,6 +492,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (!response.ok) throw new Error("Error al realizar la compra");
             notyf.success(`Compra realizada con éxito con el ID: ${data2.id_compra}`);
+            downloadBtn.disabled = false;
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
