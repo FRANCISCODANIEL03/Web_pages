@@ -496,6 +496,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             localStorage.setItem("idCompra", data2.id_compra);
             carrito = [];
             total = 0;
+            cartList.innerHTML = "";
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
