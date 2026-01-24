@@ -497,6 +497,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             carrito = [];
             total = 0;
             cartList.innerHTML = "";
+            if (carrito.length == 0) {
+                totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
+            }
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
