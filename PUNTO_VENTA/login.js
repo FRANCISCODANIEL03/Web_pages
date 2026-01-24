@@ -500,6 +500,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (carrito.length == 0) {
                 totalPriceElement.innerHTML = `<strong>Carrito vacío</strong>`;
             }
+            // limpiar localStorage
+            localStorage.removeItem("carrito");
+            localStorage.removeItem("productosConStock");
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
