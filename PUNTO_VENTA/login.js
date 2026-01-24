@@ -494,6 +494,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             notyf.success(`Compra realizada con éxito con el ID: ${data2.id_compra}`);
             downloadBtn.disabled = false;
             localStorage.setItem("idCompra", data2.id_compra);
+            carrito = [];
         } catch (error) {
             console.error("Error:", error)
             notyf.error('Hubo un problema al realizar la compra.');
