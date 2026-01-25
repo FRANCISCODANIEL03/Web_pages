@@ -510,5 +510,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     downloadBtn.addEventListener("click", () => {
+        const idCompra = localStorage.getItem("idCompra");
     });
 });
