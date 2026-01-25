@@ -515,5 +515,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             notyf.error('No hay una compra reciente para generar factura.');
             return;
         }
+        const tokenA = localStorage.getItem("token");
     });
 });
