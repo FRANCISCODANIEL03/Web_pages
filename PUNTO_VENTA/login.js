@@ -527,5 +527,17 @@ document.addEventListener("DOMContentLoaded", async () => {
                 if (!response.ok) throw new Error("Error al descargar el archivo");
                 return response.blob(); // Obtener la respuesta como blob
             })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob); // Crear una URL temporal
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "factura_compra.pdf"; // Cambia el nombre y extensión si es necesario
+                document.body.appendChild(a);
+                a.click(); // Simula clic para iniciar descarga
+                a.remove(); // Limpia
+                window.URL.revokeObjectURL(url); // Libera memoria
+                downloadBtn.disabled = true;
+                notyf.success('Factura descargada con éxito.');
+            })
     });
 });
