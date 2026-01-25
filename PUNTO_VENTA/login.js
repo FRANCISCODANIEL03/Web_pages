@@ -516,5 +516,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
         const tokenA = localStorage.getItem("token");
+        fetch(`${URL}/api/v1/facturas/generate/${idCompra}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${tokenA}`
+            }
+        })
     });
 });
