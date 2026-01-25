@@ -511,5 +511,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     downloadBtn.addEventListener("click", () => {
         const idCompra = localStorage.getItem("idCompra");
+        if (!idCompra) {
+            notyf.error('No hay una compra reciente para generar factura.');
+            return;
+        }
     });
 });
