@@ -509,4 +509,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
+    downloadBtn.addEventListener("click", () => {
+    });
 });
