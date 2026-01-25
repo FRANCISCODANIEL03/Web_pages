@@ -539,5 +539,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 downloadBtn.disabled = true;
                 notyf.success('Factura descargada con éxito.');
             })
+            .catch(err => {
+                console.error("Hubo un error:", err);
+            });
     });
 });
