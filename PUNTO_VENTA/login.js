@@ -542,5 +542,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             .catch(err => {
                 console.error("Hubo un error:", err);
             });
+        localStorage.removeItem("idCompra");
     });
 });
