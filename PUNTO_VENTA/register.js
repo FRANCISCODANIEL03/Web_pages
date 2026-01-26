@@ -3,4 +3,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const passwordInput = document.getElementById('password');
     const confirmPasswordInput = document.getElementById('confirm-pass');
     const toggleButton = document.getElementById('togglePassword');
+    const toggleButton2 = document.getElementById('togglePassword2');
+
 });
