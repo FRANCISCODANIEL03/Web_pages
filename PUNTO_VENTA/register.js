@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Mostrar/ocultar ícono según si hay texto
     passwordInput.addEventListener('input', () => {
+        toggleButton.classList.toggle('hidden', passwordInput.value === '');
     });
 
 });
