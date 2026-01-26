@@ -7,4 +7,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const icon = document.getElementById('iconPassword');
     const icon2 = document.getElementById('iconPassword2');
 
+    // Mostrar/ocultar ícono según si hay texto
+    passwordInput.addEventListener('input', () => {
+    });
+
 });
