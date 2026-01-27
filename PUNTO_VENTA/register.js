@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     toggleButton2.addEventListener('click', () => {
+        const isPassword = confirmPasswordInput.type === 'password';
     });
 
 
