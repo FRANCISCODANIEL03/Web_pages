@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     confirmPasswordInput.addEventListener('input', () => {
+        toggleButton2.classList.toggle('hidden', confirmPasswordInput.value === '');
     });
 
 
