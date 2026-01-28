@@ -30,4 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const regButton = document.getElementById("reg");
 
+    regButton.addEventListener("click", async () => {
+    });
 });
