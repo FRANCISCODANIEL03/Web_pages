@@ -43,5 +43,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
             ]
         });
+        const nombre = document.getElementById("nombre").value;
     });
 });
