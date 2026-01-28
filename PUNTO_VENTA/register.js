@@ -50,5 +50,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-pass").value;
 
+        if (!nombre.trim() || !apellido1.trim() || !email.trim() || !password.trim() || !confirmPassword.trim()) {
+            notyf.open({
+                type: 'warning',
+                message: 'Por favor, completa todos los campos',
+            });
+            return;
+        }
     });
 });
