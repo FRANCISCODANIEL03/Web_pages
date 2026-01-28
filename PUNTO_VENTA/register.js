@@ -47,5 +47,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const apellido1 = document.getElementById("ape1").value;
         const email = document.getElementById("email").value;
         var apellido2 = document.getElementById("ape2").value;
+        const password = document.getElementById("password").value;
     });
 });
