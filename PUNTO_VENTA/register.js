@@ -31,5 +31,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const regButton = document.getElementById("reg");
 
     regButton.addEventListener("click", async () => {
+        const notyf = new Notyf({
+            position: {
+                x: 'right',
+                y: 'top'
+            },
+            types: [
+                {
+                    type: 'warning',
+                    background: 'orange',
+                }
+            ]
+        });
     });
 });
