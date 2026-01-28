@@ -45,5 +45,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
         const nombre = document.getElementById("nombre").value;
         const apellido1 = document.getElementById("ape1").value;
+        const email = document.getElementById("email").value;
     });
 });
