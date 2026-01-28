@@ -48,5 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const email = document.getElementById("email").value;
         var apellido2 = document.getElementById("ape2").value;
         const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-pass").value;
+
     });
 });
