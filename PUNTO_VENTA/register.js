@@ -85,6 +85,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
             data = await response.json()
             console.log(data)
+            if (!response.ok) {
+                throw new Error("Error al registrar el usuario");
+            }
+
         } catch (error) {
             console.error(error);
             for (const err of data.message) {
