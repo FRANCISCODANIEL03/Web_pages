@@ -68,5 +68,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         var data = null
 
+        const nuevoUsuario = {
+            nombre: nombre,
+            apellido1: apellido1,
+            apellido2: apellido2,
+            password: password,
+            email: email
+        };
     });
 });
