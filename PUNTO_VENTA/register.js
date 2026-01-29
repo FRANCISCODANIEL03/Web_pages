@@ -66,5 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             apellido2 = null
         }
 
+        var data = null
+
     });
 });
