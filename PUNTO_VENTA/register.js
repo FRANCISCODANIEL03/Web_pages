@@ -88,6 +88,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (!response.ok) {
                 throw new Error("Error al registrar el usuario");
             }
+            notyf.success('Usuario registrado exitosamente');
+
 
         } catch (error) {
             console.error(error);
