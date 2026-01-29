@@ -76,6 +76,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             email: email
         };
         try {
+            const response = await fetch(`${URL}/api/v1/auth/register`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(nuevoUsuario)
+            });
+
         } catch (error) {
             console.error(error);
             for (const err of data.message) {
