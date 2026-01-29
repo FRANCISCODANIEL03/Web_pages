@@ -61,5 +61,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             notyf.error('Las constraseñas no coinciden');
             return;
         }
+        // Crear el objeto a enviar
+        if (apellido2 == "") {
+            apellido2 = null
+        }
+
     });
 });
