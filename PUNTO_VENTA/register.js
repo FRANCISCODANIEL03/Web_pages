@@ -57,5 +57,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
             return;
         }
+        if (password !== confirmPassword) {
+            notyf.error('Las constraseñas no coinciden');
+            return;
+        }
     });
 });
