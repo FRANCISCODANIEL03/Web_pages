@@ -75,5 +75,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             password: password,
             email: email
         };
+        try {
+        } catch (error) {
+            console.error(error);
+            for (const err of data.message) {
+                notyf.error(err);
+            }
+        }
     });
 });
