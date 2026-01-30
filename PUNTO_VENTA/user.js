@@ -9,4 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         toggleButton.classList.toggle('hidden', passwordInput.value === '');
     });
 
+    toggleButton.addEventListener('click', () => {
+    });
+
 });
