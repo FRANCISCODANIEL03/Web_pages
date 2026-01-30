@@ -4,4 +4,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     const toggleButton = document.getElementById('togglePassword');
     const icon = document.getElementById('iconPassword');
 
+    // Mostrar/ocultar ícono según si hay texto
+    passwordInput.addEventListener('input', () => {
+        toggleButton.classList.toggle('hidden', passwordInput.value === '');
+    });
+
 });
