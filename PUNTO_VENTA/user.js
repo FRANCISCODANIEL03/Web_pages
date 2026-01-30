@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     toggleButton.addEventListener('click', () => {
         const isPassword = passwordInput.type === 'password';
+        passwordInput.type = !isPassword ? 'password' : 'text';
     });
 
 });
