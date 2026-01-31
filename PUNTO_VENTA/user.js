@@ -32,4 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             ]
     });
 
+    // Validar el login
+    loginButton.addEventListener("click", async () => {
+    });
 });
