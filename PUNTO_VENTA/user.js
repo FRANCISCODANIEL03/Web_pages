@@ -49,5 +49,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             "email": email,
             "password": password
         }
+        try {
+        } catch (error) {
+            notyf.error('Credenciales incorrectas. Intenta nuevamente.')
+            return;
+        }
     });
 });
