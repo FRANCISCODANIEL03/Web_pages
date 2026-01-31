@@ -17,5 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const loginButton = document.getElementById("login");
 
+    let clientes = [];
+
 
 });
