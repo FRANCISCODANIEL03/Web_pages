@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Validar el login
     loginButton.addEventListener("click", async () => {
+        const email = document.getElementById("email").value;
     });
 });
