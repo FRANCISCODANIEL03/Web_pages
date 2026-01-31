@@ -15,4 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         icon.className = !isPassword ? 'bi bi-eye-slash' : 'bi bi-eye';
     });
 
+    const loginButton = document.getElementById("login");
+
+
 });
