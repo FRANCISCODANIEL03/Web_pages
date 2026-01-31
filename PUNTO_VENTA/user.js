@@ -19,5 +19,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let clientes = [];
 
+    const notyf = new Notyf({
+            position: {
+                x: 'right',
+                y: 'top'
+            },
+            types: [
+                {
+                    type: 'warning',
+                    background: 'orange',
+                }
+            ]
+    });
 
 });
