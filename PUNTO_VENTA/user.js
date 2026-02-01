@@ -88,6 +88,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             localStorage.setItem("clienteId", clientes.id);
             localStorage.setItem("clienteNombre", clientes.nombre);
             localStorage.setItem("token", clientes.token);
+            console.log(clientes.token);
+
+            // Redirigir o realizar alguna acción
+            setTimeout(() => {
+                window.location.href = "login.html"; 
+            }, 1000);
         }
     });
 });
