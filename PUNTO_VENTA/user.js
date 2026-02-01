@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         //Buscar el cliente en la lista
         if (email == "admin@gmail.com" && password == "admin123") {
+            notyf.success('Inicio de administrador exitoso.')
         }
 
     });
