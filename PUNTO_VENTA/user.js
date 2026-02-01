@@ -74,6 +74,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             localStorage.setItem("clienteNombre", clientes.nombre);
             localStorage.setItem("token", clientes.token);
 
+            // Redirigir o realizar alguna acción
+            setTimeout(() => {
+                window.location.href = "admin.html"; // Cambiar por la URL de tu página principal
+            }, 1000);
+            return;
         }
 
     });
