@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         if (clientes) {
+            notyf.success('Inicio de sesión exitoso.')
+
         }
     });
 });
