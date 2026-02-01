@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Almacenar los datos del usuario en localStorage
             localStorage.setItem("clienteId", clientes.id);
             localStorage.setItem("clienteNombre", clientes.nombre);
+            localStorage.setItem("token", clientes.token);
+
         }
 
     });
