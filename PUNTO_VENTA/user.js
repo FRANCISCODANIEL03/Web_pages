@@ -50,9 +50,25 @@ document.addEventListener("DOMContentLoaded", async () => {
             "password": password
         }
         try {
+            // Obtener los clientes desde la API
+            const response = await fetch(`${URL}/api/v1/auth/login`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            });
+            if (!response.ok) throw new Error("Error al obtener los datos de los clientes");
+            clientes = await response.json();
+            console.log(clientes);
+            
         } catch (error) {
             notyf.error('Credenciales incorrectas. Intenta nuevamente.')
             return;
         }
+        //Buscar el cliente en la lista
+        if (email == "admin@gmail.com" && password == "admin123") {
+        }
+
     });
 });
