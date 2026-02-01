@@ -84,6 +84,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (clientes) {
             notyf.success('Inicio de sesión exitoso.')
 
+            // Almacenar los datos del usuario en localStorage
+            localStorage.setItem("clienteId", clientes.id);
         }
     });
 });
