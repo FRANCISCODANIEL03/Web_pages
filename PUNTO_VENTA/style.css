@@ -12,3 +12,19 @@ body{
     align-items: center;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    height: auto;
+    width: 35%;
+    min-width: 350px;
+    min-height: 350px;
+    margin-top: 7%;
+}
