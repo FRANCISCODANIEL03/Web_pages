@@ -106,3 +106,14 @@ label{
     background-color: #f9f9f9;
     padding: 0 6px;
 }
+
+input:not(:placeholder-shown)~label,
+input:focus~label{
+    top: 1px;
+    font-size: .8em;
+    background-color: #f9f9f9;
+    padding: 0 6px;
+    color: #512dab;
+    font-weight: bold;
+    border-radius: 45px;
+}
