@@ -69,3 +69,7 @@ form{
 .hidden {
   display: none;
 }
+
+i{
+    color: #512dab;
+}
