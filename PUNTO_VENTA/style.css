@@ -87,3 +87,8 @@ input{
     color: #000;
     font-weight: normal;
 }
+
+input:focus, input:not(:placeholder-shown){
+    border-color: #512dab;
+    font-weight: bold;
+}
