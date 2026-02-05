@@ -121,3 +121,7 @@ input:focus~label{
 input::placeholder {
   color: transparent;
 }
+
+input:focus::placeholder {
+  color: gray; /* o el color que desees cuando el input está enfocado */
+}
