@@ -158,3 +158,12 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+/* Cambiar la disposición en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Pone los divs uno encima del otro */
+        align-items: center; /* Centra los divs */
+    }
+    
+}
