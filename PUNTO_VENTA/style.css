@@ -154,3 +154,7 @@ a{
     text-transform: uppercase;
     margin-top: 10px;
 }
+
+a:hover{
+    text-decoration: underline;
+}
