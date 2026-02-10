@@ -185,3 +185,7 @@ input:focus~label{
     font-weight: bold;
     border-radius: 45px;
 }
+
+input::placeholder {
+    color: transparent;
+}
