@@ -221,3 +221,7 @@ select{
 select:hover{
     border-color: #512dab;
 }
+
+#cart.visible {
+    transform: translateX(0);
+}
