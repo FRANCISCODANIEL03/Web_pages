@@ -217,3 +217,7 @@ select{
     font-weight: bold;
     border: 2px solid #2c4766;
 }
+
+select:hover{
+    border-color: #512dab;
+}
