@@ -239,3 +239,7 @@ select:hover{
     margin-top: 10px;
     cursor: pointer;
 }
+
+button:hover{
+    background-color: #2c4766;
+}
