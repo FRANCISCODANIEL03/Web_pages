@@ -257,3 +257,10 @@ button:hover{
     color: #333;
     outline: none;
 }
+
+.toggle-password:hover,
+.toggle-password:focus,
+.toggle-password:active {
+    background: transparent;
+    box-shadow: none;
+}
