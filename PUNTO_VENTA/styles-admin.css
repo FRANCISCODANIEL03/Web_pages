@@ -243,3 +243,17 @@ select:hover{
 button:hover{
     background-color: #2c4766;
 }
+
+.toggle-password {
+    position: absolute;
+    right: 0;
+    left: 90%;
+    top: 35%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    outline: none;
+}
