@@ -264,3 +264,7 @@ button:hover{
     background: transparent;
     box-shadow: none;
 }
+
+.hidden {
+    display: none;
+}
