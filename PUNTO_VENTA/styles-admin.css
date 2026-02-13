@@ -272,3 +272,11 @@ button:hover{
 i {
     color: #512dab; 
 }
+
+/* Estado oculto: visible en el DOM pero invisible visualmente */
+.animated-hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
