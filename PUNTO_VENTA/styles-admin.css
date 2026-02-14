@@ -342,3 +342,8 @@ i {
 .stock-bajo {
     background-color: red;
 }
+
+.stock-medio {
+    background-color: yellow;
+    color: black;
+}
