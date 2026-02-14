@@ -330,3 +330,11 @@ i {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* Colores según stock */
+.producto {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+}
