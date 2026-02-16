@@ -391,3 +391,8 @@ i {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.confirm-btn.yes {
+    background-color: #e53935;
+    color: white;
+}
