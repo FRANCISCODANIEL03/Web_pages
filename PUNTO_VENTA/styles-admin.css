@@ -396,3 +396,8 @@ i {
     background-color: #e53935;
     color: white;
 }
+
+.confirm-btn.no {
+    background-color: #9e9e9e;
+    color: white;
+}
