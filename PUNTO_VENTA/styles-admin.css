@@ -383,3 +383,11 @@ i {
 .modal-buttons {
     margin-top: 1rem;
 }
+
+.confirm-btn {
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
