@@ -129,3 +129,7 @@ footer {
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
+
+#product-list li:last-child {
+    border-bottom: none;
+}
