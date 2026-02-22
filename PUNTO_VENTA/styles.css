@@ -213,3 +213,7 @@ input[type="number"]:hover {
     padding: 0.5rem;
     border-bottom: 1px solid #ddd;
 }
+
+#cart-list li:last-child {
+    border-bottom: none;
+}
