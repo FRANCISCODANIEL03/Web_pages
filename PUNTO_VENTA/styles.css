@@ -249,3 +249,7 @@ input[type="number"]:hover {
 .pagination-button:hover {
     background-color: #ddd;
 }
+
+button:hover{
+    background-color: #2c4766;
+}
