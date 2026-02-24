@@ -253,3 +253,10 @@ input[type="number"]:hover {
 button:hover{
     background-color: #2c4766;
 }
+
+button:disabled {
+    background-color: #ccc;        /* gris claro */
+    color: #666;                   /* texto gris oscuro */
+    cursor: not-allowed;           /* ícono de prohibido */
+    border: 1px solid #999;
+}
