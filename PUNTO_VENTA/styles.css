@@ -260,3 +260,11 @@ button:disabled {
     cursor: not-allowed;           /* ícono de prohibido */
     border: 1px solid #999;
 }
+
+.btns{
+    width: 40px;          /* Mismo ancho y alto */
+    height: 40px;
+    border-radius: 50%;   /* 50% lo hace perfectamente circular */
+    padding: 0;           /* Elimina padding interno */
+    margin: 2px;
+}
