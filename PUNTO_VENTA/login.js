@@ -324,6 +324,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         //  Guardar la categoría seleccionada
         const selectedCategory = categoryFilter.value;
 
+        // Obtener y llenar categorías únicas
+        const categoriasUnicas = [...new Set(productos.map(p => p.categoria))];
     }
 
 
