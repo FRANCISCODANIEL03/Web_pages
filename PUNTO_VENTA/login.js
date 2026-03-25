@@ -344,6 +344,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             li.setAttribute("data-categoria", producto.categoria);
             li.setAttribute("title", producto.descripcion || "Sin descripción");
 
+            aplicarEstiloStock(li, producto.stock)
+
         });
     }
 
