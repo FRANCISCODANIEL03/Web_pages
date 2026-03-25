@@ -327,6 +327,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Obtener y llenar categorías únicas
         const categoriasUnicas = [...new Set(productos.map(p => p.categoria))];
         categoryFilter.innerHTML = `<option value="todos">Todos</option>`;
+        categoriasUnicas.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            categoryFilter.appendChild(option);
+        });
+
     }
 
 
