@@ -341,6 +341,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const li = document.createElement("li");
             li.textContent = `${producto.nombre_producto} - Stock: ${producto.stock} - Precio: $${producto.precio}`;
             li.setAttribute("data-id", producto.id_producto);
+            li.setAttribute("data-categoria", producto.categoria);
         });
     }
 
