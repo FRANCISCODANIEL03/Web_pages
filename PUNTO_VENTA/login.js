@@ -334,6 +334,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             categoryFilter.appendChild(option);
         });
 
+        //  Restaurar la selección visual después de llenar el select
+        categoryFilter.value = selectedCategory;
+
     }
 
 
