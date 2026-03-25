@@ -338,6 +338,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         categoryFilter.value = selectedCategory;
 
         productosPagina.forEach(producto => {
+            const li = document.createElement("li");
         });
     }
 
