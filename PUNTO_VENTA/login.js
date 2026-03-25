@@ -337,6 +337,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         //  Restaurar la selección visual después de llenar el select
         categoryFilter.value = selectedCategory;
 
+        productosPagina.forEach(producto => {
+        });
     }
 
 
