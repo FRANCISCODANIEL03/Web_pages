@@ -350,6 +350,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             const option = document.createElement("option");
             option.value = producto.id_producto;
+            option.textContent = producto.nombre_producto;
         });
     }
 
