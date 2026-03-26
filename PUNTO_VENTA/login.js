@@ -349,6 +349,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             productList.appendChild(li);
 
             const option = document.createElement("option");
+            option.value = producto.id_producto;
         });
     }
 
