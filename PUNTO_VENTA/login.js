@@ -354,6 +354,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             option.dataset.productName = producto.nombre_producto;
             option.dataset.price = producto.precio;
             option.dataset.stock = producto.stock;
+            productSelect.appendChild(option);
         });
     }
 
