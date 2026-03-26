@@ -352,6 +352,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             option.value = producto.id_producto;
             option.textContent = producto.nombre_producto;
             option.dataset.productName = producto.nombre_producto;
+            option.dataset.price = producto.precio;
         });
     }
 
