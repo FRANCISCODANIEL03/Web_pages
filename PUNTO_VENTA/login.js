@@ -359,6 +359,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function aplicarEstiloStock(li, stock) {
+        if (stock === 0) {
+            li.style.backgroundColor = "#f44336"; // rojo
+            li.style.color = "white";
+        } else if (stock <= 10) {
+            li.style.backgroundColor = "#ffeb3b"; // amarillo
+            li.style.color = "black";
+        } else {
+            li.style.backgroundColor = ""; // color por defecto
+            li.style.color = "";
+        }
     }
 
 
