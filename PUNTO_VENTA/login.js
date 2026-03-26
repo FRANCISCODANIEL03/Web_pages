@@ -346,6 +346,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             aplicarEstiloStock(li, producto.stock)
 
+            productList.appendChild(li);
+
         });
     }
 
