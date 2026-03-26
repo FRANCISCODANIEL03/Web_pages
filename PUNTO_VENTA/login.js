@@ -358,5 +358,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
+    function aplicarEstiloStock(li, stock) {
+    }
+
 
 });
