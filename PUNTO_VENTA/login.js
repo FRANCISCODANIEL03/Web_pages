@@ -387,4 +387,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
 
+    function actualizarPaginacion(productos) {
+    }
+
+
 });
