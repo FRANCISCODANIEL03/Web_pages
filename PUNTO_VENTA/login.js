@@ -382,6 +382,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             productosFiltrados = productos.filter(p => p.categoria === selectedCategory);
         }
 
+        mostrarPagina(1, productosFiltrados);
     });
 
 
