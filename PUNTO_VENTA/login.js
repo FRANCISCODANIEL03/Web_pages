@@ -388,6 +388,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
     function actualizarPaginacion(productos) {
+        paginationContainer.innerHTML = "";
     }
 
 
