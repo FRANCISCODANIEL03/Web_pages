@@ -373,6 +373,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
     categoryFilter.addEventListener("change", () => {
+        const selectedCategory = categoryFilter.value;
     });
 
 
