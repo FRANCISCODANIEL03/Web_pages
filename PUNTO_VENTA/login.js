@@ -372,4 +372,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
 
+    categoryFilter.addEventListener("change", () => {
+    });
+
+
 });
