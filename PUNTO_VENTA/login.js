@@ -383,6 +383,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         mostrarPagina(1, productosFiltrados);
+        actualizarPaginacion(productosFiltrados);
     });
 
 
