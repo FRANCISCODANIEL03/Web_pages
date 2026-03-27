@@ -376,6 +376,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         const selectedCategory = categoryFilter.value;
         let productosFiltrados;
 
+        if (selectedCategory === "todos") {
+            productosFiltrados = productos;
+        } else {
+            productosFiltrados = productos.filter(p => p.categoria === selectedCategory);
+        }
+
     });
 
 
