@@ -391,6 +391,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         paginationContainer.innerHTML = "";
         const totalPages = Math.ceil(productos.length / itemsPerPage);
 
+        for (let i = 1; i <= totalPages; i++) {
+        }
     }
 
 
