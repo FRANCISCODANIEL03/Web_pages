@@ -412,6 +412,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         cart.classList.toggle("visible");
     });
 
+    // Cerrar sesión
+    logoutButton.addEventListener("click", () => {
+    });
 
 
 });
