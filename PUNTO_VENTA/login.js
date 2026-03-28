@@ -414,6 +414,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Cerrar sesión
     logoutButton.addEventListener("click", () => {
+        // limpiar el localStorage
+        localStorage.removeItem("token");
     });
 
 
