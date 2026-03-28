@@ -397,6 +397,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             button.classList.add("pagination-button");
             if (i === currentPage) button.classList.add("active");
 
+            button.addEventListener("click", () => {
+                mostrarPagina(i, productos);
+                document.querySelectorAll(".pagination-button").forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+            });
+
         }
     }
 
