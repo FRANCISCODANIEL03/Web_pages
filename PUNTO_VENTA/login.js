@@ -416,6 +416,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     logoutButton.addEventListener("click", () => {
         // limpiar el localStorage
         localStorage.removeItem("token");
+        localStorage.removeItem("clienteId");
     });
 
 
