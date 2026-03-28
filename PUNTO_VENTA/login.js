@@ -394,6 +394,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement("button");
             button.textContent = i;
+            button.classList.add("pagination-button");
         }
     }
 
