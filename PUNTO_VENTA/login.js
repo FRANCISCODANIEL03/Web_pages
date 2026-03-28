@@ -403,6 +403,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 button.classList.add("active");
             });
 
+            paginationContainer.appendChild(button);
         }
     }
 
