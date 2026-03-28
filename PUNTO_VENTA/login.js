@@ -407,5 +407,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 
+    // Mostrar/ocultar carrito
+    cartButton.addEventListener("click", () => {
+        cart.classList.toggle("visible");
+    });
+
+
 
 });
