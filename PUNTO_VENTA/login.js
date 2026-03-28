@@ -395,6 +395,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             const button = document.createElement("button");
             button.textContent = i;
             button.classList.add("pagination-button");
+            if (i === currentPage) button.classList.add("active");
+
         }
     }
 
